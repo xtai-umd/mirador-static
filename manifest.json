@@ -1,0 +1,221 @@
+{
+  "label": "1902-01-15",
+  "metadata": [
+    {
+      "value": "sn83045081",
+      "label": "lccn"
+    },
+    {
+      "value": "F. Raine",
+      "label": "publisher"
+    },
+    {
+      "value": "Baltimore, Md.",
+      "label": "place_of_publication"
+    },
+    {
+      "value": "1841",
+      "label": "start_year"
+    },
+    {
+      "value": "1918",
+      "label": "end_year"
+    },
+    {
+      "value": [],
+      "label": "subject"
+    },
+    {
+      "value": [
+        {
+          "@value": "Maryland--Baltimore"
+        }
+      ],
+      "label": "place"
+    },
+    {
+      "value": "1902-01-15",
+      "label": "date_issued"
+    }
+  ],
+  "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/issue.json",
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "sequences": [
+    {
+      "canvases": [
+        {
+          "thumbnail": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_garlic/sn83045081/00296022548/1902011501/0098.tif/full/400,/0/default.jpg",
+          "images": [
+            {
+              "motivation": "sc:painting",
+              "resource": {
+                "format": "image/jpeg",
+                "width": 7285,
+                "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/1",
+                "height": 10661,
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_garlic/sn83045081/00296022548/1902011501/0098.tif",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "@type": "dctypes:Image"
+              },
+              "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/1",
+              "@type": "oa:Annotation"
+            }
+          ],
+          "otherContent": [
+            {
+              "@id":"./annotation.json",
+              "@type":"sc:AnnotationList"
+            }
+          ],
+          "width": 7285,
+          "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/1",
+          "height": 10661,
+          "label": "page 1",
+          "@type": "sc:Canvas"
+        },
+        {
+          "thumbnail": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_garlic/sn83045081/00296022548/1902011501/0099.tif/full/400,/0/default.jpg",
+          "images": [
+            {
+              "motivation": "sc:painting",
+              "resource": {
+                "format": "image/jpeg",
+                "width": 7334,
+                "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/2",
+                "height": 10650,
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_garlic/sn83045081/00296022548/1902011501/0099.tif",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "@type": "dctypes:Image"
+              },
+              "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/2",
+              "@type": "oa:Annotation"
+            }
+          ],
+          "width": 7334,
+          "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/2",
+          "height": 10650,
+          "label": "page 2",
+          "@type": "sc:Canvas"
+        },
+        {
+          "thumbnail": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_garlic/sn83045081/00296022548/1902011501/0100.tif/full/400,/0/default.jpg",
+          "images": [
+            {
+              "motivation": "sc:painting",
+              "resource": {
+                "format": "image/jpeg",
+                "width": 7285,
+                "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/3",
+                "height": 10661,
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_garlic/sn83045081/00296022548/1902011501/0100.tif",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "@type": "dctypes:Image"
+              },
+              "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/3",
+              "@type": "oa:Annotation"
+            }
+          ],
+          "width": 7285,
+          "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/3",
+          "height": 10661,
+          "label": "page 3",
+          "@type": "sc:Canvas"
+        },
+        {
+          "thumbnail": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_garlic/sn83045081/00296022548/1902011501/0101.tif/full/400,/0/default.jpg",
+          "images": [
+            {
+              "motivation": "sc:painting",
+              "resource": {
+                "format": "image/jpeg",
+                "width": 7315,
+                "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/4",
+                "height": 10657,
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_garlic/sn83045081/00296022548/1902011501/0101.tif",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "@type": "dctypes:Image"
+              },
+              "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/4",
+              "@type": "oa:Annotation"
+            }
+          ],
+          "width": 7315,
+          "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/4",
+          "height": 10657,
+          "label": "page 4",
+          "@type": "sc:Canvas"
+        },
+        {
+          "thumbnail": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_garlic/sn83045081/00296022548/1902011501/0102.tif/full/400,/0/default.jpg",
+          "images": [
+            {
+              "motivation": "sc:painting",
+              "resource": {
+                "format": "image/jpeg",
+                "width": 7307,
+                "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/5",
+                "height": 10620,
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_garlic/sn83045081/00296022548/1902011501/0102.tif",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "@type": "dctypes:Image"
+              },
+              "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/5",
+              "@type": "oa:Annotation"
+            }
+          ],
+          "width": 7307,
+          "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/5",
+          "height": 10620,
+          "label": "page 5",
+          "@type": "sc:Canvas"
+        },
+        {
+          "thumbnail": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_garlic/sn83045081/00296022548/1902011501/0103.tif/full/400,/0/default.jpg",
+          "images": [
+            {
+              "motivation": "sc:painting",
+              "resource": {
+                "format": "image/jpeg",
+                "width": 7285,
+                "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/6",
+                "height": 10661,
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_garlic/sn83045081/00296022548/1902011501/0103.tif",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "@type": "dctypes:Image"
+              },
+              "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/6",
+              "@type": "oa:Annotation"
+            }
+          ],
+          "width": 7285,
+          "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/6",
+          "height": 10661,
+          "label": "page 6",
+          "@type": "sc:Canvas"
+        }
+      ],
+      "label": "page order",
+      "@id": "normal",
+      "@type": "sc:Sequence"
+    }
+  ],
+  "@type": "sc:Manifest"
+}

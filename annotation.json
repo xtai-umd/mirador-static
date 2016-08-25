@@ -1,0 +1,40 @@
+{
+  "@context":"http://iiif.io/api/presentation/2/context.json",
+  "@id":"http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/1",
+  "@type":"sc:AnnotationList",
+  "resources": [
+    {
+      "@type" : "oa:Annotation",
+      "on" : {
+        "@type" : "oa:SpecificResource",
+        "selector" : {
+          "@type" : "oa:FragmentSelector",
+          "value" : "xywh=600,4000,5000,800"
+        },
+        "full" : "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/1"
+      }
+    },
+    {
+      "@type" : "oa:Annotation",
+      "on" : {
+        "@type" : "oa:SpecificResource",
+        "selector" : {
+          "@type" : "oa:FragmentSelector",
+          "value" : "xywh=600,8000,5000,800"
+        },
+        "full" : "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/1"
+      }
+    },
+    {
+      "@type" : "oa:Annotation",
+      "on" : {
+        "@type" : "oa:SpecificResource",
+        "selector" : {
+          "@type" : "oa:FragmentSelector",
+          "value" : "xywh=600,100,700,800"
+        },
+        "full" : "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/1"
+      }
+    }
+  ]
+}
