@@ -5,6 +5,9 @@
   "resources": [
     {
       "@type" : "oa:Annotation",
+      "resource" : [ {
+        "@type" : "dctypes:Dataset"
+      } ],
       "on" : {
         "@type" : "oa:SpecificResource",
         "selector" : {
@@ -16,6 +19,9 @@
     },
     {
       "@type" : "oa:Annotation",
+      "resource" : [ {
+        "@type" : "dctypes:Dataset"
+      } ],
       "on" : {
         "@type" : "oa:SpecificResource",
         "selector" : {
@@ -27,6 +33,9 @@
     },
     {
       "@type" : "oa:Annotation",
+      "resource" : [ {
+        "@type" : "dctypes:Dataset"
+      } ],
       "on" : {
         "@type" : "oa:SpecificResource",
         "selector" : {
