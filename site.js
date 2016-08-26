@@ -40,5 +40,3 @@ $(function() {
     ]
   });
 });
-
-Mirador.OsdRegionDrawTool.eventEmitter.publish('disableTooltips.' + Mirador.OsdRegionDrawTool.windowId);
