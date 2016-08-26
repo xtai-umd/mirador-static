@@ -68,6 +68,10 @@
             {
               "@id":"./annotation.json",
               "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"./annotation2.json",
+              "@type":"sc:AnnotationList"
             }
           ],
           "width": 7285,

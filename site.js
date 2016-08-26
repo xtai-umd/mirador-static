@@ -1,5 +1,5 @@
 var manifests = "./manifest.json";
-var annotation = "./annotation.json";
+// var annotation = "./annotation.json";
 jQuery(function() {
   if (typeof manifests === undefined || manifests === null || manifests === "") {
     manifests = "./manifest.json";

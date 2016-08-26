@@ -43378,6 +43378,21 @@ return paper;
         return canvas.otherContent[0]['@id'];
       } else { return false; }
     },
+    getAnnotationsListUrlList: function(canvasId) {
+      var _this = this;
+      var canvas = jQuery.grep(_this.getCanvases(), function(canvas, index) {
+        return canvas['@id'] === canvasId;
+      })[0];
+
+      if (canvas && canvas.otherContent) {
+        var return_list = [];
+        for (var i = 0; i < canvas.otherContent.length; i++) {
+          return_list.push(canvas.otherContent[i]['@id']);
+        }
+        console.log(return_list);
+        return return_list;
+      } else { return false; }
+    },
     getStructures: function() {
       var _this = this;
       return _this.jsonLd.structures;
@@ -49075,21 +49090,26 @@ return paper;
        */
     getAnnotations: function() {
       //first look for manifest annotations
+      console.log("getAnnotations");
       var _this = this,
-      url = _this.manifest.getAnnotationsListUrl(_this.canvasID);
+      // url = _this.manifest.getAnnotationsListUrl(_this.canvasID);
+      url_list = _this.manifest.getAnnotationsListUrlList(_this.canvasID);
 
-      if (url !== false) {
-        jQuery.get(url, function(list) {
-          _this.annotationsList = _this.annotationsList.concat(list.resources);
-          jQuery.each(_this.annotationsList, function(index, value) {
-            //if there is no ID for this annotation, set a random one
-            if (typeof value['@id'] === 'undefined') {
-              value['@id'] = $.genUUID();
-            }
-            //indicate this is a manifest annotation - which affects the UI
-            value.endpoint = "manifest";
+      if (url_list !== false) {
+        jQuery.each(url_list, function(index, anno_url) {
+          jQuery.get(anno_url, function(list) {
+            var new_annotations = jQuery.each(list.resources, function(index, value) {
+              //if there is no ID for this annotation, set a random one
+              if (typeof value['@id'] === 'undefined') {
+                value['@id'] = $.genUUID();
+              }
+              //indicate this is a manifest annotation - which affects the UI
+              value.endpoint = "manifest";
+            });
+            console.log("new_annotations:" + new_annotations);
+            _this.annotationsList = _this.annotationsList.concat(new_annotations);
+            _this.eventEmitter.publish('ANNOTATIONS_LIST_UPDATED', {windowId: _this.id, annotationsList: _this.annotationsList});
           });
-          _this.eventEmitter.publish('ANNOTATIONS_LIST_UPDATED', {windowId: _this.id, annotationsList: _this.annotationsList});
         });
       }
 
