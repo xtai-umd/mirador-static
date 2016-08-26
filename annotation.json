@@ -4,9 +4,11 @@
   "@type":"sc:AnnotationList",
   "resources": [
     {
-      "@type": ["oa:Annotation", "umd:articleSegment"],
+      "@id" : "http://iiif-sandbox.lib.umd.edu/annotation/article/001",
+      "@type" : ["oa:Annotation", "umd:articleSegment"],
       "resource" : [ {
-        "@type" : "dctypes:Dataset"
+        "@type" : "dctypes:Text",
+        "chars": ""
       } ],
       "on" : {
         "@type" : "oa:SpecificResource",
@@ -15,12 +17,15 @@
           "value" : "xywh=335,1240,820,500"
         },
         "full" : "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/1"
-      }
+      },
+      "motivation" : "oa:highlighting"
     },
     {
+      "@id" : "http://iiif-sandbox.lib.umd.edu/annotation/article/002",
       "@type": ["oa:Annotation", "umd:articleSegment"],
       "resource" : [ {
-        "@type" : "dctypes:Dataset"
+        "@type" : "dctypes:Text",
+        "chars": ""
       } ],
       "on" : {
         "@type" : "oa:SpecificResource",
@@ -29,12 +34,15 @@
           "value" : "xywh=1180,2320,820,3170"
         },
         "full" : "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/1"
-      }
+      },
+      "motivation" : "oa:highlighting"
     },
     {
+      "@id" : "http://iiif-sandbox.lib.umd.edu/annotation/article/003",
       "@type": ["oa:Annotation", "umd:articleSegment"],
       "resource" : [ {
-        "@type" : "dctypes:Dataset"
+        "@type" : "dctypes:Text",
+        "chars": ""
       } ],
       "on" : {
         "@type" : "oa:SpecificResource",
@@ -43,12 +51,15 @@
           "value" : "xywh=2040,1240,1670,9050"
         },
         "full" : "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/1"
-      }
+      },
+      "motivation" : "oa:highlighting"
     },
     {
+      "@id" : "search-result-001",
       "@type": ["oa:Annotation", "umd:searchResult"],
       "resource" : [ {
-        "@type" : "dctypes:Dataset"
+        "@type" : "dctypes:Text",
+        "chars": ""
       } ],
       "on" : {
         "@type" : "oa:SpecificResource",
@@ -57,12 +68,15 @@
           "value" : "xywh=2740,1080,360,100"
         },
         "full" : "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/1"
-      }
+      },
+      "motivation" : "oa:highlighting"
     },
     {
+      "@id" : "search-result-002",
       "@type": ["oa:Annotation", "umd:searchResult"],
       "resource" : [ {
-        "@type" : "dctypes:Dataset"
+        "@type" : "dctypes:Text",
+        "chars": ""
       } ],
       "on" : {
         "@type" : "oa:SpecificResource",
@@ -71,12 +85,15 @@
           "value" : "xywh=910,2410,220,70"
         },
         "full" : "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/1"
-      }
+      },
+      "motivation" : "oa:highlighting"
     },
     {
+      "@id" : "search-result-003",
       "@type": ["oa:Annotation", "umd:searchResult"],
       "resource" : [ {
-        "@type" : "dctypes:Dataset"
+        "@type" : "dctypes:Text",
+        "chars": ""
       } ],
       "on" : {
         "@type" : "oa:SpecificResource",
@@ -85,12 +102,15 @@
           "value" : "xywh=1310,2510,150,30"
         },
         "full" : "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/1"
-      }
+      },
+      "motivation" : "oa:highlighting"
     },
     {
+      "@id" : "search-result-004",
       "@type": ["oa:Annotation", "umd:searchResult"],
       "resource" : [ {
-        "@type" : "dctypes:Dataset"
+        "@type" : "dctypes:Text",
+        "chars": ""
       } ],
       "on" : {
         "@type" : "oa:SpecificResource",
@@ -99,12 +119,15 @@
           "value" : "xywh=450,2060,180,40"
         },
         "full" : "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/1"
-      }
+      },
+      "motivation" : "oa:highlighting"
     },
     {
+      "@id" : "search-result-005",
       "@type": ["oa:Annotation", "umd:searchResult"],
       "resource" : [ {
-        "@type" : "dctypes:Dataset"
+        "@type" : "dctypes:Text",
+        "chars": ""
       } ],
       "on" : {
         "@type" : "oa:SpecificResource",
@@ -113,7 +136,8 @@
           "value" : "xywh=585,2120,190,45"
         },
         "full" : "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/1"
-      }
+      },
+      "motivation" : "oa:highlighting"
     }
   ]
 }
