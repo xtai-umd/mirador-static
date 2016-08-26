@@ -43389,7 +43389,6 @@ return paper;
         for (var i = 0; i < canvas.otherContent.length; i++) {
           return_list.push(canvas.otherContent[i]['@id']);
         }
-        console.log(return_list);
         return return_list;
       } else { return false; }
     },
@@ -44824,7 +44823,6 @@ return paper;
     this.eventsSubscriptions = [];
 
     this.init();
-    this.listenForActions();
   };
 
   $.OsdRegionDrawTool.prototype = {
@@ -44833,6 +44831,8 @@ return paper;
       this.svgOverlay = this.osdViewer.svgOverlay(this.osdViewer.id, this.windowId, this.state, this.eventEmitter);
       this.svgOverlay.show();
       this.svgOverlay.disable();
+
+      this.listenForActions();
     },
 
     enterCreateMode: function() {
@@ -44897,17 +44897,17 @@ return paper;
       });
 
       var windowElement = _this.state.getWindowElement(_this.windowId);
-      // this.annoTooltip = new $.AnnotationTooltip({
-      //   targetElement: jQuery(this.osdViewer.element),
-      //   state: _this.state,
-      //   eventEmitter: _this.eventEmitter,
-      //   windowId: _this.windowId
-      // });
-      // this.annoTooltip.initializeViewerUpgradableToEditor({
-      //   container: windowElement,
-      //   viewport: windowElement,
-      //   getAnnoFromRegion: _this.getAnnoFromRegion.bind(this)
-      // });
+      this.annoTooltip = new $.AnnotationTooltip({
+        targetElement: jQuery(this.osdViewer.element),
+        state: _this.state,
+        eventEmitter: _this.eventEmitter,
+        windowId: _this.windowId
+      });
+      this.annoTooltip.initializeViewerUpgradableToEditor({
+        container: windowElement,
+        viewport: windowElement,
+        getAnnoFromRegion: _this.getAnnoFromRegion.bind(this)
+      });
       this.svgOverlay.paperScope.view.draw();
     },
 
@@ -44958,28 +44958,28 @@ return paper;
      //   _this.eventEmitter.publish('annotationMousePosition.' + _this.windowId, [annotations]);
       //  return;
       //}
-      // _this.annoTooltip.showViewer({
-      //   annotations: annotations,
-      //   triggerEvent: event,
-      //   shouldDisplayTooltip: function(api) {
-      //     //track whether the cursor is within the tooltip (with the specified tolerance) and disables show/hide/update functionality.
-      //     if (api.elements.tooltip) {
-      //       var cursorWithinTooltip = true;
-      //       var leftSide = api.elements.tooltip.offset().left - _this.svgOverlay.hitOptions.tolerance;
-      //       var rightSide = api.elements.tooltip.offset().left + api.elements.tooltip.width() + _this.svgOverlay.hitOptions.tolerance;
-      //       if (absoluteLocation.x < leftSide || rightSide < absoluteLocation.x) {
-      //         cursorWithinTooltip = false;
-      //       }
-      //       var topSide = api.elements.tooltip.offset().top - _this.svgOverlay.hitOptions.tolerance;
-      //       var bottomSide = api.elements.tooltip.offset().top + api.elements.tooltip.height() + _this.svgOverlay.hitOptions.tolerance;
-      //       if (absoluteLocation.y < topSide || bottomSide < absoluteLocation.y) {
-      //         cursorWithinTooltip = false;
-      //       }
-      //       return !cursorWithinTooltip;
-      //     }
-      //     return true;
-      //   }
-      // });
+      _this.annoTooltip.showViewer({
+        annotations: annotations,
+        triggerEvent: event,
+        shouldDisplayTooltip: function(api) {
+          //track whether the cursor is within the tooltip (with the specified tolerance) and disables show/hide/update functionality.
+          if (api.elements.tooltip) {
+            var cursorWithinTooltip = true;
+            var leftSide = api.elements.tooltip.offset().left - _this.svgOverlay.hitOptions.tolerance;
+            var rightSide = api.elements.tooltip.offset().left + api.elements.tooltip.width() + _this.svgOverlay.hitOptions.tolerance;
+            if (absoluteLocation.x < leftSide || rightSide < absoluteLocation.x) {
+              cursorWithinTooltip = false;
+            }
+            var topSide = api.elements.tooltip.offset().top - _this.svgOverlay.hitOptions.tolerance;
+            var bottomSide = api.elements.tooltip.offset().top + api.elements.tooltip.height() + _this.svgOverlay.hitOptions.tolerance;
+            if (absoluteLocation.y < topSide || bottomSide < absoluteLocation.y) {
+              cursorWithinTooltip = false;
+            }
+            return !cursorWithinTooltip;
+          }
+          return true;
+        }
+      });
     },
 
     listenForActions: function() {
@@ -44991,6 +44991,10 @@ return paper;
 
       _this.osdViewer.addHandler('close', this._thisDestroy);
 
+      this.eventsSubscriptions.push(this.eventEmitter.subscribe('DESTROY_EVENTS.'+this.windowId, function(event) {
+        _this.destroy();
+      }));
+
       this.eventsSubscriptions.push(_this.eventEmitter.subscribe('refreshOverlay.' + _this.windowId, function(event) {
         _this.eventEmitter.publish('modeChange.' + _this.windowId, 'displayAnnotations');
         // return to pointer mode
@@ -45001,35 +45005,35 @@ return paper;
         _this.render();
       }));
 
-      // this.eventsSubscriptions.push(_this.eventEmitter.subscribe('updateTooltips.' + _this.windowId, function(event, location, absoluteLocation) {
-      //   if (_this.annoTooltip && !_this.annoTooltip.inEditOrCreateMode) {
-      //     _this.showTooltipsFromMousePosition(event, location, absoluteLocation);
-      //   }
-      // }));
+      this.eventsSubscriptions.push(_this.eventEmitter.subscribe('updateTooltips.' + _this.windowId, function(event, location, absoluteLocation) {
+        if (_this.annoTooltip && !_this.annoTooltip.inEditOrCreateMode) {
+          _this.showTooltipsFromMousePosition(event, location, absoluteLocation);
+        }
+      }));
 
-      // this.eventsSubscriptions.push(_this.eventEmitter.subscribe('removeTooltips.' + _this.windowId, function() {
-      //   jQuery(_this.osdViewer.element).qtip('destroy', true);
-      // }));
+      this.eventsSubscriptions.push(_this.eventEmitter.subscribe('removeTooltips.' + _this.windowId, function() {
+        jQuery(_this.osdViewer.element).qtip('destroy', true);
+      }));
 
-      // this.eventsSubscriptions.push(_this.eventEmitter.subscribe('disableTooltips.' + _this.windowId, function() {
-      //   if (_this.annoTooltip) {
-      //     _this.annoTooltip.inEditOrCreateMode = true;
-      //   }
-      // }));
+      this.eventsSubscriptions.push(_this.eventEmitter.subscribe('disableTooltips.' + _this.windowId, function() {
+        if (_this.annoTooltip) {
+          _this.annoTooltip.inEditOrCreateMode = true;
+        }
+      }));
 
-      // this.eventsSubscriptions.push(_this.eventEmitter.subscribe('enableTooltips.' + _this.windowId, function() {
-      //   if (_this.annoTooltip) {
-      //     _this.annoTooltip.inEditOrCreateMode = false;
-      //   }
-      //   _this.svgOverlay.restoreDraftShapes();
-      // }));
+      this.eventsSubscriptions.push(_this.eventEmitter.subscribe('enableTooltips.' + _this.windowId, function() {
+        if (_this.annoTooltip) {
+          _this.annoTooltip.inEditOrCreateMode = false;
+        }
+        _this.svgOverlay.restoreDraftShapes();
+      }));
 
       this.eventsSubscriptions.push(_this.eventEmitter.subscribe('SET_ANNOTATION_EDITING.' + _this.windowId, function(event, options) {
         jQuery.each(_this.annotationsToShapesMap, function(key, paths) {
           // if we have a matching annotationId, pass the boolean value on for each path, otherwise, always pass false
           if (key === options.annotationId) {
             if (options.isEditable) {
-              _this.eventEmitter.publish('SET_OVERLAY_TOOLTIP.' + _this.windowId, {"tooltip" : null, "visible" : false, "paths" : path});
+              _this.eventEmitter.publish('SET_OVERLAY_TOOLTIP.' + _this.windowId, {"tooltip" : options.tooltip, "visible" : true, "paths" : paths});
             } else {
               _this.eventEmitter.publish('SET_OVERLAY_TOOLTIP.' + _this.windowId, {"tooltip" : null, "visible" : false, "paths" : []});
             }
@@ -45842,257 +45846,6 @@ return paper;
     this.eventEmitter = eventEmitter;
     this.eventsSubscriptions = [];
 
-    this._thisResize = function(){
-      _this.resize();
-    };
-    this._thisRotate = function(event) {
-      _this.rotate(event);
-      _this.resize();
-    };
-    this.viewer.addHandler('animation', this._thisResize);
-    this.viewer.addHandler('open', this._thisResize);
-    this.viewer.addHandler('animation-finish', this._thisResize);
-    this.viewer.addHandler('update-viewport', this._thisResize);
-    this.viewer.addHandler('resize',this._thisResize);
-    this.viewer.addHandler('rotate', this._thisRotate);
-    this.viewer.addHandler('constrain',this._thisResize);
-
-    this._thisDestroy = function(){
-      _this.destroy();
-    };
-
-    this.viewer.addHandler('close',this._thisDestroy);
-
-   this.eventsSubscriptions.push(_this.eventEmitter.subscribe('modeChange.' + _this.windowId,function(event,newMode){
-      _this.currentTool = '';
-    }));
-
-    this.eventsSubscriptions.push(_this.eventEmitter.subscribe('toggleDrawingTool.' + _this.windowId, function(event, tool) {
-      //qtip code should NOT be here
-      if (_this.disabled) {
-        jQuery('.qtip' + _this.windowId).qtip('hide');
-        return;
-      }
-      jQuery('#' + osdViewerId).parents('.window').find('.qtip-viewer').hide();
-      _this.currentTool = null;
-      _this.mode = '';
-      for (var i = 0; i < _this.tools.length; i++) {
-        if (_this.tools[i].logoClass === tool) {
-          _this.currentTool = _this.tools[i];
-        }
-      }
-    }));
-
-    this.eventsSubscriptions.push(_this.eventEmitter.subscribe('toggleDefaultDrawingTool.' + _this.windowId, function(event) {
-      //qtip code should NOT be here
-      if (_this.disabled) {
-        jQuery('.qtip' + _this.windowId).qtip('hide');
-        return;
-      }
-      jQuery('#' + osdViewerId).parents('.window').find('.qtip-viewer').hide();
-      _this.currentTool = null;
-      for (var i = 0; i < _this.availableAnnotationDrawingTools.length; i++) {
-        for (var j = 0; j < _this.tools.length; j++) {
-          if (_this.availableAnnotationDrawingTools[i] == _this.tools[j].name) {
-            _this.currentTool = _this.tools[j];
-            break;
-          }
-        }
-        if (_this.currentTool) {
-          break;
-        }
-      }
-    }));
-
-    var _thisHandleDeleteShapeEvent = function(event,shape){
-      _this.handleDeleteShapeEvent(event,shape);
-    };
-    this.eventsSubscriptions.push(_this.eventEmitter.subscribe('deleteShape.' + _this.windowId, _thisHandleDeleteShapeEvent));
-
-    this.eventsSubscriptions.push(_this.eventEmitter.subscribe('changeBorderColor.' + _this.windowId, function(event, color) {
-      _this.strokeColor = color;
-      if (_this.hoveredPath) {
-        _this.hoveredPath.strokeColor = color;
-        _this.paperScope.view.draw();
-      }
-    }));
-
-    this.eventsSubscriptions.push(_this.eventEmitter.subscribe('changeFillColor.' + _this.windowId, function(event, color, alpha) {
-      _this.fillColor = color;
-      _this.fillColorAlpha = alpha;
-      if (_this.hoveredPath && _this.hoveredPath.closed) {
-        _this.hoveredPath.fillColor = color;
-        _this.hoveredPath.fillColor.alpha = alpha;
-        _this.paperScope.view.draw();
-      }
-    }));
-
-    this.eventsSubscriptions.push(_this.eventEmitter.subscribe('toggleBorderType.' + _this.windowId, function (event, type) {
-      if (type == 'solid') {
-        _this.dashArray = [];
-      } else if (type == 'dashed') {
-        _this.dashArray = [5, 5];
-      } else if (type == 'dotdashed') {
-        _this.dashArray = [2, 5, 7, 5];
-      }
-      if (_this.hoveredPath) {
-        _this.hoveredPath.dashArray = _this.dashArray;
-        _this.paperScope.view.draw();
-      }
-    }));
-
-    this.eventsSubscriptions.push(_this.eventEmitter.subscribe('annotationEditSave.'+_this.windowId,function(event,oaAnno){
-      var onAnnotationSaved = jQuery.Deferred();
-      var windowElement = _this.state.getWindowElement(_this.windowId);
-      if (!_this.draftPaths.length) {
-          new $.DialogBuilder(windowElement).dialog({
-            message: i18n.t('editModalSaveAnnotationWithNoShapesMsg'),
-            buttons: {
-              success: {
-                label: i18n.t('editModalBtnSaveWithoutShapes'),
-                className: 'btn-success',
-                callback: function () {
-                  oaAnno.on = {
-                    "@type": "oa:SpecificResource",
-                    "full": _this.state.getWindowObjectById(_this.windowId).canvasID
-                  };
-                  //save to endpoint
-                  _this.eventEmitter.publish('annotationUpdated.' + _this.windowId, [oaAnno]);
-                  onAnnotationSaved.resolve();
-                }
-              },
-              danger: {
-                label: i18n.t('editModalBtnDeleteAnnotation'),
-                className: 'btn-danger',
-                callback: function () {
-                  _this.eventEmitter.publish('annotationDeleted.' + _this.windowId, [oaAnno['@id']]);
-                  onAnnotationSaved.resolve();
-                }
-              },
-              main: {
-                label: i18n.t('cancel'),
-                className: 'btn-default',
-                callback: function () {
-                  onAnnotationSaved.reject();
-                }
-              }
-            }
-          });
-      } else {
-        var svg = _this.getSVGString(_this.draftPaths);
-        oaAnno.on = {
-          "@type": "oa:SpecificResource",
-          "full": _this.state.getWindowObjectById(_this.windowId).canvasID,
-          "selector": {
-            "@type": "oa:SvgSelector",
-            "value": svg
-          }
-        };
-        //save to endpoint
-        _this.eventEmitter.publish('annotationUpdated.' + _this.windowId, [oaAnno]);
-        onAnnotationSaved.resolve();
-      }
-
-      jQuery.when(onAnnotationSaved.promise()).then(function(){
-        _this.eventEmitter.publish('annotationEditSaveSuccessful.'+_this.windowId);
-        _this.eventEmitter.publish('SET_ANNOTATION_EDITING.' + _this.windowId, {
-          "annotationId" : oaAnno['@id'],
-          "isEditable" : false,
-          "tooltip" : _this
-        });
-        _this.eventEmitter.publish('modeChange.' + _this.windowId, 'displayAnnotations');
-        // return to pointer mode
-        _this.eventEmitter.publish('SET_STATE_MACHINE_POINTER.' + _this.windowId);
-
-      },function(){
-        // confirmation rejected don't do anything
-      });
-
-
-    }));
-
-    this.eventsSubscriptions.push(_this.eventEmitter.subscribe('annotationEditCancel.'+_this.windowId,function(event,id){
-
-      _this.eventEmitter.publish('SET_ANNOTATION_EDITING.' + _this.windowId, {
-        "annotationId" : id,
-        "isEditable" : false,
-        "tooltip" : _this.annoTooltip // whats the point of this? maybe when we add confirm for cancel?
-      });
-      _this.eventEmitter.publish('modeChange.' + _this.windowId, 'displayAnnotations');
-      // return to pointer mode
-      _this.eventEmitter.publish('SET_STATE_MACHINE_POINTER.' +_this.windowId);
-
-    }));
-
-    this.eventsSubscriptions.push(_this.eventEmitter.subscribe('clearDraftPaths.'+_this.windowId,function(){
-      _this.clearDraftData();
-    }));
-
-    this.eventsSubscriptions.push(_this.eventEmitter.subscribe('onAnnotationCreated.'+_this.windowId,function(event,oaAnno){
-      //should remove the styles added for newly created annotation
-      for(var i=0;i<_this.draftPaths.length;i++){
-        if(_this.draftPaths[i].data && _this.draftPaths[i].data.newlyCreated){
-          _this.draftPaths[i].strokeWidth /= _this.draftPaths[i].data.newlyCreatedStrokeFactor;
-          _this.draftPaths[i].data.currentStrokeValue /= _this.draftPaths[i].data.newlyCreatedStrokeFactor;
-          delete _this.draftPaths[i].data.newlyCreated;
-          delete _this.draftPaths[i].data.newlyCreatedStrokeFactor;
-        }
-      }
-
-      var svg = _this.getSVGString(_this.draftPaths);
-      oaAnno.on = {
-        "@type": "oa:SpecificResource",
-        "full": _this.state.getWindowObjectById(_this.windowId).canvasID,
-        "selector": {
-          "@type": "oa:SvgSelector",
-          "value": svg
-        }
-      };
-      //save to endpoint
-      _this.eventEmitter.publish('annotationCreated.' + _this.windowId, [oaAnno]);
-
-      // return to pointer mode
-      _this.eventEmitter.publish('SET_STATE_MACHINE_POINTER.' + _this.windowId);
-
-      //reenable viewer tooltips
-      _this.eventEmitter.publish('enableTooltips.' + _this.windowId);
-
-      _this.clearDraftData();
-      _this.annoTooltip = null;
-      _this.annoEditorVisible = false;
-    }));
-
-    this.eventsSubscriptions.push(_this.eventEmitter.subscribe('onAnnotationCreatedCanceled.'+_this.windowId,function(event,cancelCallback,immediate){
-      var cancel = function(){
-        _this.eventEmitter.publish('SET_STATE_MACHINE_POINTER.' + _this.windowId);
-
-        _this.clearDraftData();
-        _this.annoTooltip = null;
-        _this.annoEditorVisible = false;
-      };
-      if (!immediate) {
-        new $.DialogBuilder().confirm(i18n.t('cancelAnnotation'), function (result) {
-          if (!result) {
-            return;
-          }
-          cancel();
-          if (cancelCallback) {
-            cancelCallback();
-          }
-        });
-      }else{
-        cancel();
-      }
-    }));
-
-    this.eventsSubscriptions.push(_this.eventEmitter.subscribe('onAnnotationDeleted.' + _this.windowId,function(event,id,callback){
-      _this.eventEmitter.publish('annotationDeleted.' + _this.windowId, [id]);
-      _this.eventEmitter.publish('modeChange.' + _this.windowId, 'displayAnnotations');
-      if(callback){
-        callback();
-      }
-    }));
-
     this.resize();
     this.show();
     this.init();
@@ -46155,6 +45908,265 @@ return paper;
 
     listenForActions: function() {
       var _this = this;
+
+      this._thisResize = function(){
+        _this.resize();
+      };
+      this._thisRotate = function(event) {
+        _this.rotate(event);
+        _this.resize();
+      };
+      this.viewer.addHandler('animation', this._thisResize);
+      this.viewer.addHandler('open', this._thisResize);
+      this.viewer.addHandler('animation-finish', this._thisResize);
+      this.viewer.addHandler('update-viewport', this._thisResize);
+      this.viewer.addHandler('resize',this._thisResize);
+      this.viewer.addHandler('rotate', this._thisRotate);
+      this.viewer.addHandler('constrain',this._thisResize);
+
+      this._thisDestroy = function(){
+        _this.destroy();
+      };
+
+      this.viewer.addHandler('close',this._thisDestroy);
+
+      this.eventsSubscriptions.push(this.eventEmitter.subscribe('DESTROY_EVENTS.'+this.windowId, function(event) {
+        _this.destroy();
+      }));
+
+      this.eventsSubscriptions.push(_this.eventEmitter.subscribe('modeChange.' + _this.windowId,function(event,newMode){
+        _this.currentTool = '';
+        //if we are switching between editing and drawing, remove an old path
+        if (_this.inEditMode && _this.path) {
+          _this.removeFocus();
+        }
+      }));
+
+      this.eventsSubscriptions.push(_this.eventEmitter.subscribe('toggleDrawingTool.' + _this.windowId, function(event, tool) {
+        //qtip code should NOT be here
+        if (_this.disabled) {
+          jQuery('.qtip' + _this.windowId).qtip('hide');
+          return;
+        }
+        jQuery('#' + _this.osdViewerId).parents('.window').find('.qtip-viewer').hide();
+        _this.currentTool = null;
+        _this.mode = '';
+        for (var i = 0; i < _this.tools.length; i++) {
+          if (_this.tools[i].logoClass === tool) {
+            _this.currentTool = _this.tools[i];
+          }
+        }
+      }));
+
+      this.eventsSubscriptions.push(_this.eventEmitter.subscribe('toggleDefaultDrawingTool.' + _this.windowId, function(event) {
+        //qtip code should NOT be here
+        if (_this.disabled) {
+          jQuery('.qtip' + _this.windowId).qtip('hide');
+          return;
+        }
+        jQuery('#' + _this.osdViewerId).parents('.window').find('.qtip-viewer').hide();
+        _this.currentTool = null;
+        for (var i = 0; i < _this.availableAnnotationDrawingTools.length; i++) {
+          for (var j = 0; j < _this.tools.length; j++) {
+            if (_this.availableAnnotationDrawingTools[i] == _this.tools[j].name) {
+              _this.currentTool = _this.tools[j];
+              break;
+            }
+          }
+          if (_this.currentTool) {
+            break;
+          }
+        }
+      }));
+
+      var _thisHandleDeleteShapeEvent = function(event,shape){
+        _this.handleDeleteShapeEvent(event,shape);
+      };
+      this.eventsSubscriptions.push(_this.eventEmitter.subscribe('deleteShape.' + _this.windowId, _thisHandleDeleteShapeEvent));
+
+      this.eventsSubscriptions.push(_this.eventEmitter.subscribe('changeBorderColor.' + _this.windowId, function(event, color) {
+        _this.strokeColor = color;
+        if (_this.hoveredPath) {
+          _this.hoveredPath.strokeColor = color;
+          _this.paperScope.view.draw();
+        }
+      }));
+
+      this.eventsSubscriptions.push(_this.eventEmitter.subscribe('changeFillColor.' + _this.windowId, function(event, color, alpha) {
+        _this.fillColor = color;
+        _this.fillColorAlpha = alpha;
+        if (_this.hoveredPath && _this.hoveredPath.closed) {
+          _this.hoveredPath.fillColor = color;
+          _this.hoveredPath.fillColor.alpha = alpha;
+          _this.paperScope.view.draw();
+        }
+      }));
+
+      this.eventsSubscriptions.push(_this.eventEmitter.subscribe('toggleBorderType.' + _this.windowId, function (event, type) {
+        if (type == 'solid') {
+          _this.dashArray = [];
+        } else if (type == 'dashed') {
+          _this.dashArray = [5, 5];
+        } else if (type == 'dotdashed') {
+          _this.dashArray = [2, 5, 7, 5];
+        }
+        if (_this.hoveredPath) {
+          _this.hoveredPath.dashArray = _this.dashArray;
+          _this.paperScope.view.draw();
+        }
+      }));
+
+      this.eventsSubscriptions.push(_this.eventEmitter.subscribe('annotationEditSave.'+_this.windowId,function(event,oaAnno){
+        var onAnnotationSaved = jQuery.Deferred();
+        var windowElement = _this.state.getWindowElement(_this.windowId);
+        if (!_this.draftPaths.length) {
+            new $.DialogBuilder(windowElement).dialog({
+              message: i18n.t('editModalSaveAnnotationWithNoShapesMsg'),
+              buttons: {
+                success: {
+                  label: i18n.t('editModalBtnSaveWithoutShapes'),
+                  className: 'btn-success',
+                  callback: function () {
+                    oaAnno.on = {
+                      "@type": "oa:SpecificResource",
+                      "full": _this.state.getWindowObjectById(_this.windowId).canvasID
+                    };
+                    //save to endpoint
+                    _this.eventEmitter.publish('annotationUpdated.' + _this.windowId, [oaAnno]);
+                    onAnnotationSaved.resolve();
+                  }
+                },
+                danger: {
+                  label: i18n.t('editModalBtnDeleteAnnotation'),
+                  className: 'btn-danger',
+                  callback: function () {
+                    _this.eventEmitter.publish('annotationDeleted.' + _this.windowId, [oaAnno['@id']]);
+                    onAnnotationSaved.resolve();
+                  }
+                },
+                main: {
+                  label: i18n.t('cancel'),
+                  className: 'btn-default',
+                  callback: function () {
+                    onAnnotationSaved.reject();
+                  }
+                }
+              }
+            });
+        } else {
+          var svg = _this.getSVGString(_this.draftPaths);
+          oaAnno.on = {
+            "@type": "oa:SpecificResource",
+            "full": _this.state.getWindowObjectById(_this.windowId).canvasID,
+            "selector": {
+              "@type": "oa:SvgSelector",
+              "value": svg
+            }
+          };
+          //save to endpoint
+          _this.eventEmitter.publish('annotationUpdated.' + _this.windowId, [oaAnno]);
+          onAnnotationSaved.resolve();
+        }
+
+        jQuery.when(onAnnotationSaved.promise()).then(function(){
+          _this.eventEmitter.publish('annotationEditSaveSuccessful.'+_this.windowId);
+          _this.eventEmitter.publish('SET_ANNOTATION_EDITING.' + _this.windowId, {
+            "annotationId" : oaAnno['@id'],
+            "isEditable" : false,
+            "tooltip" : _this
+          });
+          _this.eventEmitter.publish('modeChange.' + _this.windowId, 'displayAnnotations');
+          // return to pointer mode
+          _this.eventEmitter.publish('SET_STATE_MACHINE_POINTER.' + _this.windowId);
+
+        },function(){
+          // confirmation rejected don't do anything
+        });
+
+
+      }));
+
+      this.eventsSubscriptions.push(_this.eventEmitter.subscribe('annotationEditCancel.'+_this.windowId,function(event,id){
+
+        _this.eventEmitter.publish('SET_ANNOTATION_EDITING.' + _this.windowId, {
+          "annotationId" : id,
+          "isEditable" : false,
+          "tooltip" : _this.annoTooltip // whats the point of this? maybe when we add confirm for cancel?
+        });
+        _this.eventEmitter.publish('modeChange.' + _this.windowId, 'displayAnnotations');
+        // return to pointer mode
+        _this.eventEmitter.publish('SET_STATE_MACHINE_POINTER.' +_this.windowId);
+
+      }));
+
+      this.eventsSubscriptions.push(_this.eventEmitter.subscribe('clearDraftPaths.'+_this.windowId,function(){
+        _this.clearDraftData();
+      }));
+
+      this.eventsSubscriptions.push(_this.eventEmitter.subscribe('onAnnotationCreated.'+_this.windowId,function(event,oaAnno){
+        //should remove the styles added for newly created annotation
+        for(var i=0;i<_this.draftPaths.length;i++){
+          if(_this.draftPaths[i].data && _this.draftPaths[i].data.newlyCreated){
+            _this.draftPaths[i].strokeWidth /= _this.draftPaths[i].data.newlyCreatedStrokeFactor;
+            _this.draftPaths[i].data.currentStrokeValue /= _this.draftPaths[i].data.newlyCreatedStrokeFactor;
+            delete _this.draftPaths[i].data.newlyCreated;
+            delete _this.draftPaths[i].data.newlyCreatedStrokeFactor;
+          }
+        }
+
+        var svg = _this.getSVGString(_this.draftPaths);
+        oaAnno.on = {
+          "@type": "oa:SpecificResource",
+          "full": _this.state.getWindowObjectById(_this.windowId).canvasID,
+          "selector": {
+            "@type": "oa:SvgSelector",
+            "value": svg
+          }
+        };
+        //save to endpoint
+        _this.eventEmitter.publish('annotationCreated.' + _this.windowId, [oaAnno]);
+
+        // return to pointer mode
+        _this.eventEmitter.publish('SET_STATE_MACHINE_POINTER.' + _this.windowId);
+
+        //reenable viewer tooltips
+        _this.eventEmitter.publish('enableTooltips.' + _this.windowId);
+
+        _this.clearDraftData();
+        _this.annoTooltip = null;
+        _this.annoEditorVisible = false;
+      }));
+
+      this.eventsSubscriptions.push(_this.eventEmitter.subscribe('onAnnotationCreatedCanceled.'+_this.windowId,function(event,cancelCallback,immediate){
+        var cancel = function(){
+          _this.eventEmitter.publish('SET_STATE_MACHINE_POINTER.' + _this.windowId);
+
+          _this.clearDraftData();
+          _this.annoTooltip = null;
+          _this.annoEditorVisible = false;
+        };
+        if (!immediate) {
+          new $.DialogBuilder().confirm(i18n.t('cancelAnnotation'), function (result) {
+            if (!result) {
+              return;
+            }
+            cancel();
+            if (cancelCallback) {
+              cancelCallback();
+            }
+          });
+        }else{
+          cancel();
+        }
+      }));
+
+      this.eventsSubscriptions.push(_this.eventEmitter.subscribe('onAnnotationDeleted.' + _this.windowId,function(event,id,callback){
+        _this.eventEmitter.publish('annotationDeleted.' + _this.windowId, [id]);
+        _this.eventEmitter.publish('modeChange.' + _this.windowId, 'displayAnnotations');
+        if(callback){
+          callback();
+        }
+      }));
 
       this.eventsSubscriptions.push(this.eventEmitter.subscribe('SET_OVERLAY_TOOLTIP.' + this.windowId, function(event, options) {
         _this.annoTooltip = options.tooltip;
@@ -46263,9 +46275,11 @@ return paper;
             event.point = this.overlay.getMousePositionInImage(event.point);
             event.delta = event.point - event.lastPoint;
           } else {
-            var bounds = this.overlay.path.bounds;
-            // we already have a shape, and we are moving it, need to account for that, rather than mouse position
-            event.delta = this.overlay.adjustDeltaForShape(event.lastPoint, event.point, event.delta, bounds);
+            if(this.overlay.path){
+              var bounds = this.overlay.path.bounds;
+              // we already have a shape, and we are moving it, need to account for that, rather than mouse position
+              event.delta = this.overlay.adjustDeltaForShape(event.lastPoint, event.point, event.delta, bounds);
+            }
           }
           //we may not currently have a tool if the user is in edit mode and didn't click on an editable shape
           this.overlay.currentTool.onMouseDrag(event, this.overlay);
@@ -46283,11 +46297,14 @@ return paper;
     onMouseMove: function(event) {
       this.overlay.cursorLocation = event.point;
       if (!this.overlay.disabled) {
-        // We are in drawing mode
-        // if (this.overlay.paperScope.project.hitTest(event.point, this.overlay.hitOptions)) {
-        // } else {
-        //   //jQuery(this.overlay.viewer.canvas).css('cursor','default');
-        // }
+        //We are in drawing mode
+        if (this.overlay.paperScope.project.hitTest(event.point, this.overlay.hitOptions)) {
+          this.overlay.eventEmitter.publish('POINTER_CURSOR.' + this.overlay.windowId);
+        } else if (this.overlay.currentTool && !this.overlay.path) {
+          this.overlay.eventEmitter.publish('CROSSHAIR_CURSOR.' + this.overlay.windowId);
+        } else {
+          this.overlay.eventEmitter.publish('DEFAULT_CURSOR.' + this.overlay.windowId);
+        }
         event.stopPropagation();
         if (this.overlay.currentTool) {
           this.overlay.currentTool.onMouseMove(event, this.overlay);
@@ -46357,6 +46374,7 @@ return paper;
         }
 
         if (this.overlay.currentTool) {
+          this.overlay.eventEmitter.publish('HUD_REMOVE_CLASS.'+this.overlay.windowId, ['.hud-dropdown', 'hud-disabled']);
           event.point = this.overlay.getMousePositionInImage(event.point);
           this.overlay.currentTool.onMouseDown(event, this.overlay);
         }
@@ -46752,19 +46770,18 @@ return paper;
       this.segment = null;
       this.path = null;
       this.mode = '';
-      this.currentTool =null;
       this.draftPaths.push(shape);
 
       shape.data.editable = true;
 
       this.updateSelection(true, this.hoveredPath);
       if (typeof this.annoTooltip === 'undefined' || !this.annoTooltip) {
-        // this.annoTooltip = new $.AnnotationTooltip({
-        //   targetElement: jQuery(this.canvas).parents('.mirador-osd'),
-        //   state: this.state,
-        //   eventEmitter: this.eventEmitter,
-        //   windowId: this.windowId
-        // });
+        this.annoTooltip = new $.AnnotationTooltip({
+          targetElement: jQuery(this.canvas).parents('.mirador-osd'),
+          state: this.state,
+          eventEmitter: this.eventEmitter,
+          windowId: this.windowId
+        });
       }
 
       if (this.availableExternalCommentsPanel) {
@@ -46773,15 +46790,15 @@ return paper;
       }
       var _this = this;
       if (typeof this.annoEditorVisible === 'undefined' || !this.annoEditorVisible)  {
-        // this.annoTooltip.showEditor({
-        //   annotation: {},
-        //   onSaveClickCheck: function () {
-        //     return _this.draftPaths.length;
-        //   },
-        //   onAnnotationCreated: function(oaAnno) {
-        //     _this.eventEmitter.publish('onAnnotationCreated.'+_this.windowId,[oaAnno,shape]);
-        //   }
-        // });
+        this.annoTooltip.showEditor({
+          annotation: {},
+          onSaveClickCheck: function () {
+            return _this.draftPaths.length;
+          },
+          onAnnotationCreated: function(oaAnno) {
+            _this.eventEmitter.publish('onAnnotationCreated.'+_this.windowId,[oaAnno,shape]);
+          }
+        });
         _this.annoEditorVisible = true;
       }
     },
@@ -48391,6 +48408,8 @@ return paper;
       }
       //unsubscribe from stale events as they will be updated with new module calls
       _this.eventEmitter.unsubscribe(('currentCanvasIDUpdated.' + _this.id));
+      //make sure annotation-related events are destroyed so things work properly as we switch between objects
+      _this.eventEmitter.publish('DESTROY_EVENTS.'+_this.id);
 
       _this.removeBookView();
 
@@ -49090,7 +49109,6 @@ return paper;
        */
     getAnnotations: function() {
       //first look for manifest annotations
-      console.log("getAnnotations");
       var _this = this,
       // url = _this.manifest.getAnnotationsListUrl(_this.canvasID);
       url_list = _this.manifest.getAnnotationsListUrlList(_this.canvasID);
@@ -49106,7 +49124,6 @@ return paper;
               //indicate this is a manifest annotation - which affects the UI
               value.endpoint = "manifest";
             });
-            console.log("new_annotations:" + new_annotations);
             _this.annotationsList = _this.annotationsList.concat(new_annotations);
             _this.eventEmitter.publish('ANNOTATIONS_LIST_UPDATED', {windowId: _this.id, annotationsList: _this.annotationsList});
           });
@@ -50143,10 +50160,18 @@ bindEvents: function() {
 
     init: function() {
       var _this = this;
-      var showStrokeStyle = false;
-      this.availableAnnotationStylePickers.forEach(function(picker){
-        if(picker == 'StrokeType'){
+      var showStrokeStyle = false,
+      showStrokeColor = false,
+      showFillColor = false;
+      this.availableAnnotationStylePickers.forEach(function(picker) {
+        if (picker === 'StrokeType') {
           showStrokeStyle = true;
+        }
+        if (picker === 'FillColor') {
+          showFillColor = true;
+        }
+        if (picker === 'StrokeColor') {
+          showStrokeColor = true;
         }
       });
       var annotationProperties = this.canvasControls.annotations;
@@ -50156,6 +50181,8 @@ bindEvents: function() {
           tools : _this.availableAnnotationTools,
           showEdit : annotationProperties.annotationCreation,
           showStrokeStyle: showStrokeStyle,
+          showStrokeColor: showStrokeColor,
+          showFillColor: showFillColor,
           showRefresh : annotationProperties.annotationRefresh
         })).appendTo(this.container.find('.mirador-osd-annotation-controls'));
         this.annotationElement.hide();
@@ -50234,19 +50261,6 @@ bindEvents: function() {
       setBackground.solid(this.container.find('.mirador-line-type .solid'));
       setBackground.dashed(this.container.find('.mirador-line-type .dashed'));
       setBackground.dotdashed(this.container.find('.mirador-line-type .dotdashed'));
-
-      this.container.find('.mirador-line-type').on('mouseenter', function() {
-        _this.container.find('.type-list').stop().slideFadeToggle(300);
-      });
-      this.container.find('.mirador-line-type').on('mouseleave', function() {
-        _this.container.find('.type-list').stop().slideFadeToggle(300);
-      });
-      this.container.find('.mirador-line-type').find('ul li').on('click', function() {
-        var className = jQuery(this).find('i').attr('class').replace(/fa/, '').replace(/ /, '');
-        _this.removeBackgroundImage(_this.container.find('.mirador-line-type .border-type-image'));
-        setBackground[className](_this.container.find('.mirador-line-type .border-type-image'));
-        _this.eventEmitter.publish('toggleBorderType.' + _this.windowId, className);
-      });
     },
 
     setBorderFillColorPickers: function() {
@@ -50271,6 +50285,9 @@ bindEvents: function() {
           _this.eventEmitter.publish('changeBorderColor.' + _this.windowId, color.toHexString());
           jQuery(this).spectrum("set", color.toHexString());
         },
+        move: function(color) {
+          _this.eventEmitter.publish('changeBorderColor.' + _this.windowId, color.toHexString());
+        },
         maxSelectionSize: 4,
         color: defaultBorderColor,
         palette: [
@@ -50289,7 +50306,6 @@ bindEvents: function() {
         showPalette: true,
         showButtons: false,
         showSelectionPalette: true,
-        hideAfterPaletteSelect: true,
         appendTo: 'parent',
         clickoutFiresChange: true,
         containerClassName: 'fillColorPickerPop'+_this.windowId,
@@ -50297,6 +50313,9 @@ bindEvents: function() {
         hide: function(color) {
           _this.eventEmitter.publish('changeFillColor.' + _this.windowId, [color.toHexString(), color.getAlpha()]);
           jQuery(this).spectrum("set", color);
+        },
+        move: function(color) {
+          _this.eventEmitter.publish('changeFillColor.' + _this.windowId, [color.toHexString(), color.getAlpha()]);
         },
         maxSelectionSize: 4,
         color: colorObj,
@@ -50328,6 +50347,19 @@ bindEvents: function() {
 
     bindEvents: function() {
       var _this = this;
+
+      this.container.find('.mirador-line-type.hud-enabled').on('mouseenter', function() {
+        _this.container.find('.type-list').stop().slideFadeToggle(300);
+      });
+      this.container.find('.mirador-line-type.hud-enabled').on('mouseleave', function() {
+        _this.container.find('.type-list').stop().slideFadeToggle(300);
+      });
+      this.container.find('.mirador-line-type.hud-enabled').find('ul li').on('click', function() {
+        var className = jQuery(this).find('i').attr('class').replace(/fa/, '').replace(/ /, '');
+        _this.removeBackgroundImage(_this.container.find('.mirador-line-type .border-type-image'));
+        setBackground[className](_this.container.find('.mirador-line-type .border-type-image'));
+        _this.eventEmitter.publish('toggleBorderType.' + _this.windowId, className);
+      });
     },
 
     annotationTemplate: Handlebars.compile([
@@ -50341,7 +50373,7 @@ bindEvents: function() {
                                    '</a>',
                                    '{{/each}}',
                                    '{{#if showStrokeStyle}}',
-                                   '<a class="hud-control mirador-line-type" role="button" aria-label="{{t "borderTypeTooltip"}}" title="{{t "borderTypeTooltip"}}">',
+                                   '<a class="hud-control hud-dropdown hud-disabled mirador-line-type" aria-label="{{t "borderTypeTooltip"}}" title="{{t "borderTypeTooltip"}}">',
                                    '<i class="material-icons mirador-border-icon">create</i>',
                                    '<i class="border-type-image solid"></i>',
                                    '<i class="fa fa-caret-down dropdown-icon"></i>',
@@ -50352,12 +50384,16 @@ bindEvents: function() {
                                    '</ul>',
                                    '</a>',
                                    '{{/if}}',
-                                   '<a class="hud-control mirador-osd-color-picker" title="{{t "borderColorTooltip"}}">',
+                                   '{{#if showStrokeColor}}',
+                                   '<a class="hud-control hud-dropdown hud-disabled mirador-osd-color-picker" title="{{t "borderColorTooltip"}}">',
                                    '<input type="text" class="borderColorPicker"/>',
                                    '</a>',
-                                   '<a class="hud-control mirador-osd-color-picker" title="{{t "fillColorTooltip"}}">',
+                                   '{{/if}}',
+                                   '{{#if showFillColor}}',
+                                   '<a class="hud-control hud-dropdown hud-disabled mirador-osd-color-picker" title="{{t "fillColorTooltip"}}">',
                                    '<input type="text" class="fillColorPicker"/>',
                                    '</a>',
+                                   '{{/if}}',
                                    '{{#if showRefresh}}',
                                      '<a class="hud-control mirador-osd-refresh-mode">',
                                      '<i class="fa fa-lg fa-refresh"></i>',
@@ -50475,7 +50511,19 @@ bindEvents: function() {
         });
       }
 
+      this.listenForActions();
       this.bindEvents();
+    },
+
+    listenForActions: function() {
+      var _this = this;
+      this.eventEmitter.subscribe('DISABLE_TOOLTIPS_BY_CLASS.' + this.windowId, function(event, className) {
+        _this.element.find(className).qtip('disable');
+      });
+
+      this.eventEmitter.subscribe('ENABLE_TOOLTIPS_BY_CLASS.' + this.windowId, function(event, className) {
+        _this.element.find(className).qtip('enable');
+      });
     },
 
     bindEvents: function() {
@@ -50513,6 +50561,8 @@ bindEvents: function() {
             }
             _this.eventEmitter.publish('modeChange.' + _this.windowId, 'displayAnnotations');
             _this.eventEmitter.publish('HUD_ADD_CLASS.'+_this.windowId, ['.mirador-osd-pointer-mode', 'selected']);
+            _this.eventEmitter.publish('HUD_ADD_CLASS.'+_this.windowId, ['.hud-dropdown', 'hud-disabled']);
+            _this.eventEmitter.publish('DISABLE_TOOLTIPS_BY_CLASS.'+_this.windowId, '.hud-dropdown');
             _this.eventEmitter.publish('DEFAULT_CURSOR.' + _this.windowId);
             _this.eventEmitter.publish(('windowUpdated'), {
               id: _this.windowId,
@@ -50536,6 +50586,8 @@ bindEvents: function() {
           onchoosePointer: function(event, from, to) {
             _this.eventEmitter.publish('HUD_REMOVE_CLASS.'+_this.windowId, ['.mirador-osd-edit-mode', 'selected']);
             _this.eventEmitter.publish('HUD_ADD_CLASS.'+_this.windowId, ['.mirador-osd-pointer-mode', 'selected']);
+            _this.eventEmitter.publish('HUD_ADD_CLASS.'+_this.windowId, ['.hud-dropdown', 'hud-disabled']);
+            _this.eventEmitter.publish('DISABLE_TOOLTIPS_BY_CLASS.'+_this.windowId, '.hud-dropdown');
             _this.eventEmitter.publish('CANCEL_ACTIVE_ANNOTATIONS.'+_this.windowId);
             _this.eventEmitter.publish('modeChange.' + _this.windowId, 'displayAnnotations');
             _this.eventEmitter.publish('DEFAULT_CURSOR.' + _this.windowId);
@@ -50547,6 +50599,8 @@ bindEvents: function() {
           onchooseShape: function(event, from, to, shape) {
             _this.eventEmitter.publish('HUD_REMOVE_CLASS.'+_this.windowId, ['.mirador-osd-pointer-mode', 'selected']);
             _this.eventEmitter.publish('HUD_REMOVE_CLASS.'+_this.windowId, ['.mirador-osd-edit-mode', 'selected']);
+            _this.eventEmitter.publish('HUD_REMOVE_CLASS.'+_this.windowId, ['.hud-dropdown', 'hud-disabled']);
+            _this.eventEmitter.publish('ENABLE_TOOLTIPS_BY_CLASS.'+_this.windowId, '.hud-dropdown');
             _this.eventEmitter.publish('HUD_ADD_CLASS.'+_this.windowId, ['.mirador-osd-'+shape+'-mode', 'selected']);
             _this.eventEmitter.publish('modeChange.' + _this.windowId, 'creatingAnnotation');
             _this.eventEmitter.publish('CROSSHAIR_CURSOR.' + _this.windowId);
@@ -50560,6 +50614,8 @@ bindEvents: function() {
           onchangeShape: function(event, from, to, shape) {
             _this.eventEmitter.publish('HUD_REMOVE_CLASS.'+_this.windowId, ['.mirador-osd-pointer-mode', 'selected']);
             _this.eventEmitter.publish('HUD_REMOVE_CLASS.'+_this.windowId, ['.mirador-osd-edit-mode', 'selected']);
+            _this.eventEmitter.publish('HUD_REMOVE_CLASS.'+_this.windowId, ['.hud-dropdown', 'hud-disabled']);
+            _this.eventEmitter.publish('ENABLE_TOOLTIPS_BY_CLASS.'+_this.windowId, '.hud-dropdown');
             _this.eventEmitter.publish('HUD_ADD_CLASS.'+_this.windowId, ['.mirador-osd-'+shape+'-mode', 'selected']);
             _this.eventEmitter.publish('CROSSHAIR_CURSOR.' + _this.windowId);
             //don't need to trigger a mode change, just change tool
@@ -50837,6 +50893,9 @@ bindEvents: function() {
       });
       _this.eventEmitter.subscribe('CROSSHAIR_CURSOR.' + _this.windowId, function(event) {
         jQuery(_this.osd.canvas).css("cursor", "crosshair");
+      });
+      _this.eventEmitter.subscribe('POINTER_CURSOR.' + _this.windowId, function(event) {
+        jQuery(_this.osd.canvas).css("cursor", "pointer");
       });
       //Related to Annotations HUD
     },

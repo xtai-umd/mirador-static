@@ -43,15 +43,15 @@ $(function() {
       // Additional tool settings.
       // 'Pin': {
       // },
-      'selectedColor': 'red',
+      'selectedColor': 'yellow',
       // 'doubleClickReactionTime': 300,
-      'strokeColor': 'green',
-      'fillColor': 'green',
+      'strokeColor': 'rgba(255,255,255,0)',
+      'fillColor': 'yellow',
       'fillColorAlpha': 0.2,
       // 'shapeHandleSize':10,
       // 'fixedShapeSize':10,
       // 'newlyCreatedShapeStrokeWidthFactor': 0,
-      'hoverColor':'red'
+      'hoverColor':'rgba(255,255,255,0.5)'
     },
   });
 });
