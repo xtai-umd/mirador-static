@@ -45014,7 +45014,7 @@ return paper;
           // if we have a matching annotationId, pass the boolean value on for each path, otherwise, always pass false
           if (key === options.annotationId) {
             if (options.isEditable) {
-              _this.eventEmitter.publish('SET_OVERLAY_TOOLTIP.' + _this.windowId, {"tooltip" : null, "visible" : false, "paths" : []});
+              _this.eventEmitter.publish('SET_OVERLAY_TOOLTIP.' + _this.windowId, {"tooltip" : null, "visible" : false, "paths" : path});
             } else {
               _this.eventEmitter.publish('SET_OVERLAY_TOOLTIP.' + _this.windowId, {"tooltip" : null, "visible" : false, "paths" : []});
             }
