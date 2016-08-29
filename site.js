@@ -1,5 +1,4 @@
 var manifests = "./manifest.json";
-// var annotation = "./annotation.json";
 jQuery(function() {
   if (typeof manifests === undefined || manifests === null || manifests === "") {
     manifests = "./manifest.json";
@@ -45,13 +44,13 @@ $(function() {
       // },
       'selectedColor': 'yellow',
       // 'doubleClickReactionTime': 300,
-      'strokeColor': 'rgba(255,255,255,0)',
+      'strokeColor': 'rgba(255, 255, 255, 0)',
       'fillColor': 'yellow',
       'fillColorAlpha': 0.2,
       // 'shapeHandleSize':10,
       // 'fixedShapeSize':10,
       // 'newlyCreatedShapeStrokeWidthFactor': 0,
-      'hoverColor':'rgba(255,255,255,0.5)'
+      'hoverColor':'yellow'
     },
   });
 });

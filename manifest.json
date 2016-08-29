@@ -66,11 +66,11 @@
           ],
           "otherContent": [
             {
-              "@id":"./annotation.json",
+              "@id":"./annotation-static.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"./annotation2.json",
+              "@id":"./annotation-dynamic.json",
               "@type":"sc:AnnotationList"
             }
           ],
