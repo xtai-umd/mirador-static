@@ -50,7 +50,7 @@ $(function() {
       // 'shapeHandleSize':10,
       // 'fixedShapeSize':10,
       // 'newlyCreatedShapeStrokeWidthFactor': 0,
-      'hoverColor':'yellow'
+      'hoverColor': 'rgba(255, 255, 255, 0.5)'
     },
   });
 });

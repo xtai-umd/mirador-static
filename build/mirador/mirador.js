@@ -43838,21 +43838,33 @@ return paper;
       jQuery(selector + ' a.delete').on("click", function(event) {
         event.preventDefault();
         var elem = this;
-        new $.DialogBuilder().confirm(i18n.t('deleteAnnotation'),function(result){
-          if(!result){
-            return;
+        new $.DialogBuilder(viewerParams.container).dialog({
+          message: i18n.t('deleteAnnotation'),
+          closeButton: false,
+          buttons: {
+            'no': {
+              label: i18n.t('no'),
+              className: 'btn-default',
+              callback: function() {
+                return;
+              }
+            },
+            'yes': {
+              label: i18n.t('yes'),
+              className: 'btn-primary',
+              callback: function() {
+                var display = jQuery(elem).parents('.annotation-display');
+                var id = display.attr('data-anno-id');
+                var callback = function(){
+                  api.hide();
+                  display.remove();
+                };
+
+                _this.eventEmitter.publish('onAnnotationDeleted.' + _this.windowId, [id,callback]);
+              }
+            }
           }
-          var display = jQuery(elem).parents('.annotation-display');
-          var id = display.attr('data-anno-id');
-          var callback = function(){
-            api.hide();
-            display.remove();
-          };
-
-          _this.eventEmitter.publish('onAnnotationDeleted.' + _this.windowId, [id,callback]);
-
         });
-
       });
 
       jQuery(selector + ' a.edit').on("click", function(event) {
@@ -43861,11 +43873,11 @@ return paper;
         var id = display.attr('data-anno-id');
         var oaAnno = viewerParams.getAnnoFromRegion(id)[0];
         // Don't show built in editor if external is available
-        if(!_this.state.getStateProperty('availableExternalCommentsPanel')){
+        if (!_this.state.getStateProperty('availableExternalCommentsPanel')) {
            _this.freezeQtip(api, oaAnno, viewerParams);
            _this.removeAllEvents(api, viewerParams);
            _this.addEditorEvents(api, viewerParams);
-        }else{
+        } else {
           _this.eventEmitter.publish('annotationInEditMode.' + _this.windowId,[oaAnno]);
         }
 
@@ -44835,24 +44847,42 @@ return paper;
       this.listenForActions();
     },
 
-    enterCreateMode: function() {
-      this.osdViewer.setMouseNavEnabled(false);
-      this.svgOverlay.show();
-      this.svgOverlay.enable();
+    enterDisplayAnnotations: function() {
+      // if a user selected the pointer mode but is still actively
+      // working on an annotation, don't re-render
+      if (!this.svgOverlay.inEditOrCreateMode) {
+        this.exitEditMode(true);
+        this.render();
+      }
     },
 
-    enterCreateShapeMode: function() {
-      if(!this.svgOverlay.inEditMode){
+    enterCreateAnnotation: function() {
+      // if a user selected went from pointer to a shape but is still actively
+      // working on an annotation, don't re-render
+      if (!this.svgOverlay.inEditOrCreateMode) {
+        this.osdViewer.setMouseNavEnabled(false);
+        this.svgOverlay.show();
+        this.svgOverlay.enable();
+        this.render();
+      }
+    },
+
+    enterCreateShape: function() {
+      if (!this.svgOverlay.inEditOrCreateMode) {
         this.osdViewer.setMouseNavEnabled(false);
         this.svgOverlay.show();
         this.svgOverlay.enable();
       }
     },
 
-    enterEditMode: function() {
+    enterEditAnnotation: function() {
       this.osdViewer.setMouseNavEnabled(false);
       this.svgOverlay.show();
       this.svgOverlay.enableEdit();
+    },
+
+    enterDefault: function() {
+      this.exitEditMode(false);
     },
 
     exitEditMode: function(showAnnotations) {
@@ -44866,7 +44896,6 @@ return paper;
     },
 
     render: function() {
-
       this.svgOverlay.restoreEditedShapes();
       this.svgOverlay.paperScope.activate();
       this.svgOverlay.paperScope.project.clear();
@@ -44993,16 +45022,6 @@ return paper;
 
       this.eventsSubscriptions.push(this.eventEmitter.subscribe('DESTROY_EVENTS.'+this.windowId, function(event) {
         _this.destroy();
-      }));
-
-      this.eventsSubscriptions.push(_this.eventEmitter.subscribe('refreshOverlay.' + _this.windowId, function(event) {
-        _this.eventEmitter.publish('modeChange.' + _this.windowId, 'displayAnnotations');
-        // return to pointer mode
-        _this.eventEmitter.publish('SET_STATE_MACHINE_POINTER.' + _this.windowId);
-        _this.svgOverlay.restoreEditedShapes();
-        _this.svgOverlay.deselectAll();
-        _this.svgOverlay.mode = '';
-        _this.render();
       }));
 
       this.eventsSubscriptions.push(_this.eventEmitter.subscribe('updateTooltips.' + _this.windowId, function(event, location, absoluteLocation) {
@@ -45797,7 +45816,7 @@ return paper;
     var availableExternalCommentsPanel = state.getStateProperty('availableExternalCommentsPanel');
     jQuery.extend(this, {
       disabled: true,
-      inEditMode: false,
+      inEditOrCreateMode: false,
       osdViewerId: osdViewerId,
       windowId: windowId,
       commentPanel: null,
@@ -45899,9 +45918,24 @@ return paper;
 
     handleDeleteShapeEvent: function (event, shape) {
       var _this = this;
-      new $.DialogBuilder(this.slotWindowElement).confirm(i18n.t('deleteShape'), function (result) {
-        if (result) {
-          _this.deleteShape(shape);
+      new $.DialogBuilder(this.slotWindowElement).dialog({
+        message: i18n.t('deleteShape'),
+        closeButton: false,
+        buttons: {
+          'no': {
+            label: i18n.t('no'),
+            className: 'btn-default',
+            callback: function() {
+              return;
+            }
+          },
+          'yes': {
+            label: i18n.t('yes'),
+            className: 'btn-primary',
+            callback: function() {
+              _this.deleteShape(shape);
+            }
+          }
         }
       });
     },
@@ -45934,21 +45968,13 @@ return paper;
         _this.destroy();
       }));
 
-      this.eventsSubscriptions.push(_this.eventEmitter.subscribe('modeChange.' + _this.windowId,function(event,newMode){
-        _this.currentTool = '';
-        //if we are switching between editing and drawing, remove an old path
-        if (_this.inEditMode && _this.path) {
-          _this.removeFocus();
-        }
-      }));
-
       this.eventsSubscriptions.push(_this.eventEmitter.subscribe('toggleDrawingTool.' + _this.windowId, function(event, tool) {
         //qtip code should NOT be here
         if (_this.disabled) {
-          jQuery('.qtip' + _this.windowId).qtip('hide');
+        //   jQuery('.qtip' + _this.windowId).qtip('hide');
           return;
         }
-        jQuery('#' + _this.osdViewerId).parents('.window').find('.qtip-viewer').hide();
+        // jQuery('#' + _this.osdViewerId).parents('.window').find('.qtip-viewer').hide();
         _this.currentTool = null;
         _this.mode = '';
         for (var i = 0; i < _this.tools.length; i++) {
@@ -45956,26 +45982,9 @@ return paper;
             _this.currentTool = _this.tools[i];
           }
         }
-      }));
-
-      this.eventsSubscriptions.push(_this.eventEmitter.subscribe('toggleDefaultDrawingTool.' + _this.windowId, function(event) {
-        //qtip code should NOT be here
-        if (_this.disabled) {
-          jQuery('.qtip' + _this.windowId).qtip('hide');
-          return;
-        }
-        jQuery('#' + _this.osdViewerId).parents('.window').find('.qtip-viewer').hide();
-        _this.currentTool = null;
-        for (var i = 0; i < _this.availableAnnotationDrawingTools.length; i++) {
-          for (var j = 0; j < _this.tools.length; j++) {
-            if (_this.availableAnnotationDrawingTools[i] == _this.tools[j].name) {
-              _this.currentTool = _this.tools[j];
-              break;
-            }
-          }
-          if (_this.currentTool) {
-            break;
-          }
+        //if we are switching between editing and drawing, remove an old path
+        if (_this.inEditOrCreateMode && _this.path) {
+          _this.removeFocus();
         }
       }));
 
@@ -46018,10 +46027,10 @@ return paper;
 
       this.eventsSubscriptions.push(_this.eventEmitter.subscribe('annotationEditSave.'+_this.windowId,function(event,oaAnno){
         var onAnnotationSaved = jQuery.Deferred();
-        var windowElement = _this.state.getWindowElement(_this.windowId);
         if (!_this.draftPaths.length) {
-            new $.DialogBuilder(windowElement).dialog({
+            new $.DialogBuilder(_this.slotWindowElement).dialog({
               message: i18n.t('editModalSaveAnnotationWithNoShapesMsg'),
+              closeButton: false,
               buttons: {
                 success: {
                   label: i18n.t('editModalBtnSaveWithoutShapes'),
@@ -46075,8 +46084,8 @@ return paper;
             "isEditable" : false,
             "tooltip" : _this
           });
-          _this.eventEmitter.publish('modeChange.' + _this.windowId, 'displayAnnotations');
           // return to pointer mode
+          _this.inEditOrCreateMode = false;
           _this.eventEmitter.publish('SET_STATE_MACHINE_POINTER.' + _this.windowId);
 
         },function(){
@@ -46093,7 +46102,7 @@ return paper;
           "isEditable" : false,
           "tooltip" : _this.annoTooltip // whats the point of this? maybe when we add confirm for cancel?
         });
-        _this.eventEmitter.publish('modeChange.' + _this.windowId, 'displayAnnotations');
+        _this.inEditOrCreateMode = false;
         // return to pointer mode
         _this.eventEmitter.publish('SET_STATE_MACHINE_POINTER.' +_this.windowId);
 
@@ -46127,6 +46136,7 @@ return paper;
         _this.eventEmitter.publish('annotationCreated.' + _this.windowId, [oaAnno]);
 
         // return to pointer mode
+        _this.inEditOrCreateMode = false;
         _this.eventEmitter.publish('SET_STATE_MACHINE_POINTER.' + _this.windowId);
 
         //reenable viewer tooltips
@@ -46139,6 +46149,7 @@ return paper;
 
       this.eventsSubscriptions.push(_this.eventEmitter.subscribe('onAnnotationCreatedCanceled.'+_this.windowId,function(event,cancelCallback,immediate){
         var cancel = function(){
+          _this.inEditOrCreateMode = false;
           _this.eventEmitter.publish('SET_STATE_MACHINE_POINTER.' + _this.windowId);
 
           _this.clearDraftData();
@@ -46146,24 +46157,39 @@ return paper;
           _this.annoEditorVisible = false;
         };
         if (!immediate) {
-          new $.DialogBuilder().confirm(i18n.t('cancelAnnotation'), function (result) {
-            if (!result) {
-              return;
-            }
-            cancel();
-            if (cancelCallback) {
-              cancelCallback();
+          new $.DialogBuilder(_this.slotWindowElement).dialog({
+            message: i18n.t('cancelAnnotation'),
+            closeButton: false,
+            buttons: {
+              'no': {
+                label: i18n.t('no'),
+                className: 'btn-default',
+                callback: function() {
+                  return;
+                }
+              },
+              'yes': {
+                label: i18n.t('yes'),
+                className: 'btn-primary',
+                callback: function() {
+                  cancel();
+                  if (cancelCallback) {
+                    cancelCallback();
+                  }
+                }
+              }
             }
           });
-        }else{
+        } else {
           cancel();
         }
       }));
 
-      this.eventsSubscriptions.push(_this.eventEmitter.subscribe('onAnnotationDeleted.' + _this.windowId,function(event,id,callback){
+      this.eventsSubscriptions.push(_this.eventEmitter.subscribe('onAnnotationDeleted.' + _this.windowId, function(event, id, callback) {
+        _this.inEditOrCreateMode = false;
         _this.eventEmitter.publish('annotationDeleted.' + _this.windowId, [id]);
-        _this.eventEmitter.publish('modeChange.' + _this.windowId, 'displayAnnotations');
-        if(callback){
+        _this.eventEmitter.publish('SET_STATE_MACHINE_POINTER.' + _this.windowId);
+        if (callback) {
           callback();
         }
       }));
@@ -46179,14 +46205,6 @@ return paper;
         _this.clearDraftData();
         _this.annoTooltip = null;
         _this.annoEditorVisible = false;
-      }));
-
-      this.eventsSubscriptions.push(this.eventEmitter.subscribe('ANNOTATIONS_LIST_UPDATED',function(event,opts){
-
-        if(_this.windowId === opts.windowId){
-          _this.eventEmitter.publish('refreshOverlay.'+_this.windowId);
-        }
-
       }));
     },
 
@@ -46595,7 +46613,6 @@ return paper;
         this.fillColor = this.state.getStateProperty('drawingToolsSettings').fillColor;
         this.fillColorAlpha = this.state.getStateProperty('drawingToolsSettings').fillColorAlpha;
       }
-      console.log(this.strokeColor, this.fillColor, this.fillColorAlpha);
       this.mode = 'create';
       this.path = rect.createShape(initialPoint, this);
       var eventData = {
@@ -46692,25 +46709,21 @@ return paper;
 
     disable: function() {
       this.disabled = true;
-      this.inEditMode = false;
+      this.inEditOrCreateMode = false;
       this.eventEmitter.publish('enableTooltips.' + this.windowId);
       this.deselectAll();
     },
 
     enableEdit: function() {
       this.disabled = false;
-      this.inEditMode = true;
+      this.inEditOrCreateMode = true;
       this.eventEmitter.publish('disableTooltips.' + this.windowId);
     },
 
     enable: function() {
-      var setDefaultTool = this.disabled;
       this.disabled = false;
-      this.inEditMode = false;
+      //this.inEditOrCreateMode = false;
       this.eventEmitter.publish('disableTooltips.' + this.windowId);
-      // if (setDefaultTool) {
-      //   this.eventEmitter.publish('toggleDefaultDrawingTool.' + this.windowId);
-      // }
     },
 
     refresh: function() {
@@ -46766,6 +46779,7 @@ return paper;
       if (!shape) {
         return;
       }
+      this.inEditOrCreateMode = true;
       if (this.hoveredPath) {
         this.updateSelection(false, this.hoveredPath);
       }
@@ -46807,7 +46821,7 @@ return paper;
             return _this.draftPaths.length;
           },
           onAnnotationCreated: function(oaAnno) {
-            _this.eventEmitter.publish('onAnnotationCreated.'+_this.windowId,[oaAnno,shape]);
+            _this.eventEmitter.publish('onAnnotationCreated.'+_this.windowId,[oaAnno]);
           }
         });
         _this.annoEditorVisible = true;
@@ -49122,22 +49136,6 @@ return paper;
       //first look for manifest annotations
       var _this = this,
       // url = _this.manifest.getAnnotationsListUrl(_this.canvasID);
-      //
-      // if (url !== false) {
-      //   jQuery.get(url, function(list) {
-      //     _this.annotationsList = _this.annotationsList.concat(list.resources);
-      //     jQuery.each(_this.annotationsList, function(index, value) {
-      //       //if there is no ID for this annotation, set a random one
-      //       if (typeof value['@id'] === 'undefined') {
-      //         value['@id'] = $.genUUID();
-      //       }
-      //       //indicate this is a manifest annotation - which affects the UI
-      //       value.endpoint = "manifest";
-      //     });
-      //     _this.eventEmitter.publish('ANNOTATIONS_LIST_UPDATED', {windowId: _this.id, annotationsList: _this.annotationsList});
-      //   });
-      // }
-
       url_list = _this.manifest.getAnnotationsListUrlList(_this.canvasID);
 
       if (url_list !== false) {
@@ -49415,22 +49413,22 @@ return paper;
         ],
         callbacks: {
           onstartup: function(event) {
-            _this.enterDefault();
+            _this.drawTool.enterDefault();
           },
           ondefaultState: function(event) {
-            _this.enterDefault();
+            _this.drawTool.enterDefault();
           },
           ondisplayAnnotations: function(event) {
-            _this.enterDisplayAnnotations();
+            _this.drawTool.enterDisplayAnnotations();
           },
           oncreateAnnotation: function(event) {
-            _this.enterCreateAnnotation();
+            _this.drawTool.enterCreateAnnotation();
           },
           oncreateShape: function(event) {
-            _this.enterCreateShape();
+            _this.drawTool.enterCreateShape();
           },
           oneditAnnotation: function(event) {
-            _this.enterEditAnnotation();
+            _this.drawTool.enterEditAnnotation();
           }
         }
       });
@@ -49456,8 +49454,12 @@ return paper;
     },
 
     modeSwitch: function() {
-      if (this.mode === 'displayAnnotations') { this.layerState.displayAnnotations(); }
-      else if (this.mode === 'editingAnnotation') { this.layerState.editAnnotation(); }
+      if (this.mode === 'displayAnnotations') {
+        this.layerState.displayAnnotations();
+      }
+      else if (this.mode === 'editingAnnotation') {
+        this.layerState.editAnnotation();
+      }
       else if (this.mode === 'creatingAnnotation') {
         if (this.layerState.current !== 'edit') {
           this.layerState.createAnnotation();
@@ -49465,30 +49467,10 @@ return paper;
           this.layerState.createShape();
         }
       }
-      else if (this.mode === 'default') { this.layerState.defaultState(); }
+      else if (this.mode === 'default') {
+        this.layerState.defaultState();
+      }
       else {}
-    },
-
-    enterDisplayAnnotations: function() {
-      this.drawTool.exitEditMode(true);
-      this.drawTool.render();
-    },
-
-    enterCreateAnnotation: function() {
-      this.drawTool.enterCreateMode();
-      this.drawTool.render();
-    },
-
-    enterCreateShape: function() {
-      this.drawTool.enterCreateShapeMode();
-    },
-
-    enterEditAnnotation: function() {
-      this.drawTool.enterEditMode();
-    },
-
-    enterDefault: function() {
-      this.drawTool.exitEditMode(false);
     }
   };
 
@@ -50405,9 +50387,9 @@ bindEvents: function() {
                                    '<i class="border-type-image solid"></i>',
                                    '<i class="fa fa-caret-down dropdown-icon"></i>',
                                    '<ul class="dropdown type-list">',
-                                   '<li><i class="fa solid"></i> {{t "strokeStylePickerSolid"}}</li>',
-                                   '<li><i class="fa dashed"></i> {{t "strokeStylePickerDashed"}}</li>',
-                                   '<li><i class="fa dotdashed"></i> {{t "strokeStylePickerDotdashed"}}</li>',
+                                   '<li><i class="fa solid"></i> {{t "solid"}}</li>',
+                                   '<li><i class="fa dashed"></i> {{t "dashed"}}</li>',
+                                   '<li><i class="fa dotdashed"></i> {{t "dotDashed"}}</li>',
                                    '</ul>',
                                    '</a>',
                                    '{{/if}}',
@@ -50551,6 +50533,16 @@ bindEvents: function() {
       this.eventEmitter.subscribe('ENABLE_TOOLTIPS_BY_CLASS.' + this.windowId, function(event, className) {
         _this.element.find(className).qtip('enable');
       });
+
+      this.eventEmitter.subscribe('SET_STATE_MACHINE_POINTER.' + this.windowId, function(event) {
+        if (_this.annoState.current === 'none') {
+          _this.annoState.startup();
+        } else if (_this.annoState.current === 'off') {
+          _this.annoState.displayOn();
+        } else {
+          _this.annoState.choosePointer();
+        }
+      });
     },
 
     bindEvents: function() {
@@ -50615,7 +50607,6 @@ bindEvents: function() {
             _this.eventEmitter.publish('HUD_ADD_CLASS.'+_this.windowId, ['.mirador-osd-pointer-mode', 'selected']);
             _this.eventEmitter.publish('HUD_ADD_CLASS.'+_this.windowId, ['.hud-dropdown', 'hud-disabled']);
             _this.eventEmitter.publish('DISABLE_TOOLTIPS_BY_CLASS.'+_this.windowId, '.hud-dropdown');
-            _this.eventEmitter.publish('CANCEL_ACTIVE_ANNOTATIONS.'+_this.windowId);
             _this.eventEmitter.publish('modeChange.' + _this.windowId, 'displayAnnotations');
             _this.eventEmitter.publish('DEFAULT_CURSOR.' + _this.windowId);
             _this.eventEmitter.publish(('windowUpdated'), {
@@ -50903,16 +50894,6 @@ bindEvents: function() {
 
       _this.eventEmitter.subscribe('HUD_FADE_OUT.' + _this.windowId, function(event, elementSelector, duration, complete) {
         _this.element.find(elementSelector).fadeOut(duration, complete);
-      });
-
-      _this.eventEmitter.subscribe('SET_STATE_MACHINE_POINTER.' + _this.windowId, function(event) {
-        if (_this.hud.annoState.current === 'none') {
-          _this.hud.annoState.startup();
-        } else if (_this.hud.annoState.current === 'off') {
-          _this.hud.annoState.displayOn();
-        } else {
-          _this.hud.annoState.choosePointer();
-        }
       });
 
       _this.eventEmitter.subscribe('DEFAULT_CURSOR.' + _this.windowId, function(event) {

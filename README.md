@@ -1,6 +1,7 @@
 # mirador-static
 
-Current version: `2.1 rc1` IIIF/mirador: [7477baa](https://github.com/IIIF/mirador/tree/7477baafd06ba2f9bd78b48313aef5c8a607e04b)
+Current Mirador version: `v2.1.0-rc3` IIIF/mirador: [v2.1.0-rc3](https://github.com/IIIF/mirador/tree/v2.1.0-rc3)
+with modification at [91cee56](https://github.com/xtai-umd/mirador/commit/91cee56aeb750910aa9fd77a4eee4230925c642a) in xtai-umd/mirador.
 
 
 ## Running this version
@@ -9,12 +10,13 @@ To prevent cross origin requests, please clone this repo to a local web server a
 
 A simple local web server: [https://www.browsersync.io/](https://www.browsersync.io/).
 
-If using browsersync, visit: [http://localhost:3000/mirador.html](http://localhost:3000/mirador.html).
+If using browsersync, run `browser-sync start --server` and visit: [http://localhost:3000/mirador.html](http://localhost:3000/mirador.html).
 
 ## Testing annotations
 
-Two annotation files are included in this repo:
-[`annotation-static.json`](annotation-static.json) and [`annotation-dynamic.json`](annotation-dynamic.json)
+Two annotation files are included in this repo: [`annotation-static.json`](annotation-static.json) and [`annotation-dynamic.json`](annotation-dynamic.json).
+
+These two files are referenced in the local manifest file: [`manifest.json`](manifest.json)
 
 Annotation with @type: `umd:searchResult` and `umd:articleSegment` will have different appearance.
 
