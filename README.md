@@ -16,10 +16,10 @@ If using browsersync, run `browser-sync start --server` and visit: [http://local
 
 Four annotation files are included:
 
-- [`annotations/annotation-p1-static.json`](annotations/annotation-p1-static.json)
-- [`annotations/annotation-p1-dynamic.json`](annotations/annotation-p1-dynamic.json).
-- [`annotations/annotation-p2-static.json`](annotations/annotation-p2-static.json)
-- [`annotations/annotation-p2-dynamic.json`](annotations/annotation-p2-dynamic.json).
+- [`annotations/annotation-p1-static.json`](https://github.com/xtai-umd/mirador-static/blob/gh-pages/annotations/annotation-p1-static.json)
+- [`annotations/annotation-p1-dynamic.json`](https://github.com/xtai-umd/mirador-static/blob/gh-pages/annotations/annotation-p1-dynamic.json).
+- [`annotations/annotation-p2-static.json`](https://github.com/xtai-umd/mirador-static/blob/gh-pages/annotations/annotation-p2-static.json)
+- [`annotations/annotation-p2-dynamic.json`](https://github.com/xtai-umd/mirador-static/blob/gh-pages/annotations/annotation-p2-dynamic.json).
 
 These files are referenced in the local manifest file [`manifest.json`](manifest.json) for page 1 and 2.
 
