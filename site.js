@@ -50,7 +50,19 @@ $(function() {
       // 'shapeHandleSize':10,
       // 'fixedShapeSize':10,
       // 'newlyCreatedShapeStrokeWidthFactor': 0,
-      'hoverColor': 'rgba(255, 255, 255, 0.5)'
+      'hoverColor': 'rgba(255, 255, 255, 0.5)',
+      'annotationTypeStyles': {
+        'umd:searchResult': {
+          'strokeColor': 'rgba(255, 255, 255, 0.2)',
+          'fillColor': 'yellow',
+          'fillColorAlpha': 0.2
+        },
+        'umd:articleSegment': {
+          'strokeColor': 'rgba(0, 0, 0, 0.2)',
+          'fillColor': 'green',
+          'fillColorAlpha': 0.2
+        }
+      }
     },
   });
 });
