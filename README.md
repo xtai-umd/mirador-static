@@ -1,12 +1,12 @@
 # mirador-static
 
-Current Mirador version: `v2.1.0-rc3` IIIF/mirador: [v2.1.0-rc3](https://github.com/IIIF/mirador/tree/v2.1.0-rc3)
-with modification at [91cee56](https://github.com/xtai-umd/mirador/commit/91cee56aeb750910aa9fd77a4eee4230925c642a) in xtai-umd/mirador.
+Current Mirador version: `v2.1.0-rc5` IIIF/mirador: [v2.1.0-rc5](https://github.com/IIIF/mirador/tree/v2.1.0-rc5)
+with modification at [7145be6](https://github.com/xtai-umd/mirador/commit/7145be67a645ebd8f0d648dd86ea63e5c2a2ec73) in xtai-umd/mirador.
 
 
 ## Running this version
 
-To prevent cross origin requests, please clone this repo to a local web server and run via http.
+To prevent cross-origin requests, please clone this repo to a local web server and run via HTTP.
 
 A simple local web server: [https://www.browsersync.io/](https://www.browsersync.io/).
 
@@ -14,11 +14,16 @@ If using browsersync, run `browser-sync start --server` and visit: [http://local
 
 ## Testing annotations
 
-Two annotation files are included in this repo: [`annotation-static.json`](annotation-static.json) and [`annotation-dynamic.json`](annotation-dynamic.json).
+Four annotation files are included:
 
-These two files are referenced in the local manifest file: [`manifest.json`](manifest.json)
+- [`annotations/annotation-p1-static.json`](annotations/annotation-p1-static.json)
+- [`annotations/annotation-p1-dynamic.json`](annotations/annotation-p1-dynamic.json).
+- [`annotations/annotation-p2-static.json`](annotations/annotation-p2-static.json)
+- [`annotations/annotation-p2-dynamic.json`](annotations/annotation-p2-dynamic.json).
 
-Annotation with @type: `umd:searchResult` and `umd:articleSegment` will have different appearance.
+These files are referenced in the local manifest file [`manifest.json`](manifest.json) for page 1 and 2.
+
+Annotation with @type: `umd:searchResult` and `umd:articleSegment` will have different appearance according to the [`site.js`](site.js).
 
 An example oa:annotation:
 ```json
