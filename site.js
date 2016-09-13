@@ -10,17 +10,23 @@ $(function() {
   Mirador({
     "id": "viewer",
     "mainMenuSettings": {
-      'show': false
+      'show': true
     },
     "data": [
       { "manifestUri": manifests, "location": "University of Maryland" }
     ],
+    'layout': '1x1',
     "windowObjects": [
       {
         "loadedManifest": manifests,
         "viewType": "ImageView",
         "displayLayout": false,
-        "sidePanel": false,
+        "sidePanel" : true, //whether or not to make the side panel available in this window
+        //control what is available in the side panel. if "sidePanel" is false, these options won't be applied
+        "sidePanelOptions" : {
+          "toc" : true,
+          "annotations" : true
+        },
         "bottomPanelVisible": true, //whether or not to make the bottom panel visible in this window on load. This setting is dependent on bottomPanel being true
         "canvasControls": { // The types of controls available to be displayed on a canvas
           "annotations": {
@@ -38,6 +44,25 @@ $(function() {
         }
       }
     ],
+
+    'mainMenuSettings': {
+      'show': true,
+      'buttons' : {
+        'bookmark' : false,
+        'layout' : true,
+        'options' : false,
+        'fullScreenViewer': true
+      }
+      //'height': 25,
+      //'width': '100%'
+    },
+
+    'workspacePanelSettings': {
+      'maxRows': 3,
+      'maxColumns': 3,
+      'preserveWindows': true
+    },
+
     'drawingToolsSettings': {
       // Additional tool settings.
       // 'Pin': {
