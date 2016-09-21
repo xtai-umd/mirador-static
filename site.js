@@ -71,26 +71,37 @@ $(function() {
       // 'doubleClickReactionTime': 300,
       'strokeColor': 'rgba(255, 255, 255, 0)',
       'fillColor': 'yellow',
-      'fillColorAlpha': 0.2,
+      'fillColorAlpha': 0.1,
+      'hoverColor': 'rgba(255, 255, 255, 0)',
+      'hoverFillColor': 'yellow',
+      'hoverFillColorAlpha': 0.5,
       // 'shapeHandleSize':10,
       // 'fixedShapeSize':10,
       // 'newlyCreatedShapeStrokeWidthFactor': 0,
-      'hoverColor': 'rgba(255, 255, 255, 0.5)',
       'annotationTypeStyles': {
         'umd:searchResult': {
-          'strokeColor': 'rgba(255, 255, 255, 0.2)',
+          'strokeColor': 'rgba(255, 255, 255, 0)',
           'fillColor': 'yellow',
-          'fillColorAlpha': 0.2
+          'fillColorAlpha': 0.1,
+          'hoverColor': 'rgba(255, 255, 255, 0)',
+          'hoverFillColor': 'yellow',
+          'hoverFillColorAlpha': 0.5
         },
         'umd:articleSegment': {
           'strokeColor': 'rgba(0, 0, 0, 0.2)',
           'fillColor': 'green',
-          'fillColorAlpha': 0.2
+          'fillColorAlpha': 0.1,
+          'hoverColor': 'rgba(255, 255, 255, 0.2)',
+          'hoverFillColor': 'yellow',
+          'hoverFillColorAlpha': 0.5
         },
         'umd:Article': {
-          'strokeColor': 'rgba(0, 0, 0, 0.2)',
+          'strokeColor': 'rgba(255, 255, 255, 0)',
           'fillColor': 'green',
-          'fillColorAlpha': 0.2
+          'fillColorAlpha': 0,
+          'hoverColor': 'rgba(255, 255, 255, 0.2)',
+          'hoverFillColor': 'green',
+          'hoverFillColorAlpha': 0.2
         }
       }
     },

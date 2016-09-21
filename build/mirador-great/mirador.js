@@ -41401,17 +41401,12 @@ return paper;
       'shapeHandleSize':10,
       'fixedShapeSize':10,
       'newlyCreatedShapeStrokeWidthFactor':5,
-      'hoverColor':'deepSkyBlue',
-      'hoverFillColor': 'deepSkyBlue',
-      'hoverFillColorAlpha': 0.2,
+      'hoverColor':'yellow',
       'annotationTypeStyles': {
         'type:example': {
-          'strokeColor': 'yellow',
-          'fillColor': 'yellow',
-          'fillColorAlpha': 0.0,
-          'hoverColor':'yellow',
-          'hoverFillColor': 'yellow',
-          'hoverFillColorAlpha': 0.2
+          'strokeColor': 'deepSkyBlue',
+          'fillColor': 'deepSkyBlue',
+          'fillColorAlpha': 0.0
         }
       }
     },
@@ -44969,9 +44964,6 @@ return paper;
         segments: true
       };
       var hoverColor = this.state.getStateProperty('drawingToolsSettings').hoverColor;
-      var hoverFillColor = this.state.getStateProperty('drawingToolsSettings').hoverFillColor;
-      var hoverFillColorAlpha = this.state.getStateProperty('drawingToolsSettings').hoverFillColorAlpha;
-      var annotationTypeStyles = this.state.getStateProperty('drawingToolsSettings').annotationTypeStyles;
       var annotations = [];
       for (var key in _this.annotationsToShapesMap) {
         if (_this.annotationsToShapesMap.hasOwnProperty(key)) {
@@ -44982,28 +44974,7 @@ return paper;
               annotations.push(shapeArray[idx].data.annotation);
               if(shapeTool.onHover){
                 for(var k=0;k<shapeArray.length;k++){
-                  var annoStyle = {
-                    'hoverColor': hoverColor,
-                    'hoverFillColor': hoverFillColor,
-                    'hoverFillColorAlpha': hoverFillColorAlpha
-                  };
-                  for (var styleKey in annotationTypeStyles) {
-                    if (annotationTypeStyles.hasOwnProperty(styleKey)) {
-                      if (shapeArray[k].data.annotation['@type'].includes(styleKey)) {
-                        if (typeof annotationTypeStyles[styleKey].hoverColor !== 'undefined') {
-                          annoStyle.hoverColor = annotationTypeStyles[styleKey].hoverColor;
-                        }
-                        if (typeof annotationTypeStyles[styleKey].hoverFillColor !== 'undefined') {
-                          annoStyle.hoverFillColor = annotationTypeStyles[styleKey].hoverFillColor;
-                        }
-                        if (typeof annotationTypeStyles[styleKey].hoverFillColorAlpha !== 'undefined') {
-                          annoStyle.hoverFillColorAlpha = annotationTypeStyles[styleKey].hoverFillColorAlpha;
-                        }
-                        break;
-                      }
-                    }
-                  }
-                  shapeTool.onHover(true,shapeArray[k],annoStyle.hoverColor,annoStyle.hoverFillColor,annoStyle.hoverFillColorAlpha);
+                  shapeTool.onHover(true,shapeArray[k],hoverColor);
                 }
               }
               break;
@@ -45317,22 +45288,17 @@ return paper;
       }
     },
 
-    onHover:function(activate,shape,hoverColor,hoverFillColor,hoverFillColorAlpha){
+    onHover: function (activate, shape, hoverColor) {
       // shape needs to have hovered styles
-      if(activate && !shape.data.hovered){
+      if (activate && !shape.data.hovered) {
         shape.data.nonHoverStroke = shape.strokeColor.clone();
-        shape.data.nonHoverFill = shape.fillColor.clone();
         shape.data.hovered = true;
         shape.strokeColor = hoverColor;
-        shape.fillColor = hoverFillColor;
-        shape.fillColor.alpha = hoverFillColorAlpha;
       }
       // shape is not longer hovered
-      if(!activate && shape.data.hovered){
+      if (!activate && shape.data.hovered) {
         shape.strokeColor = shape.data.nonHoverStroke.clone();
-        shape.fillColor = shape.data.nonHoverFill.clone();
         delete shape.data.nonHoverStroke;
-        delete shape.data.nonHoverFill;
         delete shape.data.hovered;
       }
     },
@@ -45690,7 +45656,7 @@ return paper;
       };
     },
 
-    onHover:function(activate,shape,hoverColor,hoverFillColor,hoverFillColorAlpha){
+    onHover:function(activate,shape,hoverColor){
       // shape needs to have hovered styles
       if(activate && !shape.data.hovered){
         shape.data.nonHoverStroke = shape.strokeColor.clone();
@@ -46648,15 +46614,9 @@ return paper;
       for (var key in annotationTypeStyles) {
         if (annotationTypeStyles.hasOwnProperty(key)) {
           if (annotation['@type'].includes(key)) {
-            if (typeof annotationTypeStyles[key].strokeColor !== 'undefined') {
-              this.strokeColor = annotationTypeStyles[key].strokeColor;
-            }
-            if (typeof annotationTypeStyles[key].fillColor !== 'undefined') {
-              this.fillColor = annotationTypeStyles[key].fillColor;
-            }
-            if (typeof annotationTypeStyles[key].fillColorAlpha !== 'undefined') {
-              this.fillColorAlpha = annotationTypeStyles[key].fillColorAlpha;
-            }
+            this.strokeColor = annotationTypeStyles[key].strokeColor;
+            this.fillColor = annotationTypeStyles[key].fillColor;
+            this.fillColorAlpha = annotationTypeStyles[key].fillColorAlpha;
             break;
           }
         }
@@ -47016,22 +46976,17 @@ return paper;
       }
     },
     
-    onHover:function(activate,shape,hoverColor,hoverFillColor,hoverFillColorAlpha){
+    onHover:function(activate,shape,hoverColor){
       // shape needs to have hovered styles
       if(activate && !shape.data.hovered){
         shape.data.nonHoverStroke = shape.strokeColor.clone();
-        shape.data.nonHoverFill = shape.fillColor.clone();
         shape.data.hovered = true;
         shape.strokeColor = hoverColor;
-        shape.fillColor = hoverFillColor;
-        shape.fillColor.alpha = hoverFillColorAlpha;
       }
       // shape is not longer hovered
       if(!activate && shape.data.hovered){
         shape.strokeColor = shape.data.nonHoverStroke.clone();
-        shape.fillColor = shape.data.nonHoverFill.clone();
         delete shape.data.nonHoverStroke;
-        delete shape.data.nonHoverFill;
         delete shape.data.hovered;
       }
     },
@@ -47221,7 +47176,7 @@ return paper;
       };
     },
 
-    onHover:function(activate,shape,hoverColor,hoverFillColor,hoverFillColorAlpha){
+    onHover:function(activate,shape,hoverColor){
       // shape needs to have hovered styles
       if(activate && !shape.data.hovered){
         shape.data.nonHoverStroke = shape.strokeColor.clone();
@@ -47538,22 +47493,17 @@ return paper;
       }
     },
 
-    onHover:function(activate,shape,hoverColor,hoverFillColor,hoverFillColorAlpha){
+    onHover:function(activate,shape,hoverColor){
       // shape needs to have hovered styles
       if(activate && !shape.data.hovered){
         shape.data.nonHoverStroke = shape.strokeColor.clone();
-        shape.data.nonHoverFill = shape.fillColor.clone();
         shape.data.hovered = true;
         shape.strokeColor = hoverColor;
-        shape.fillColor = hoverFillColor;
-        shape.fillColor.alpha = hoverFillColorAlpha;
       }
       // shape is not longer hovered
       if(!activate && shape.data.hovered){
         shape.strokeColor = shape.data.nonHoverStroke.clone();
-        shape.fillColor = shape.data.nonHoverFill.clone();
         delete shape.data.nonHoverStroke;
-        delete shape.data.nonHoverFill;
         delete shape.data.hovered;
       }
     },
