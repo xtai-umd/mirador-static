@@ -86,6 +86,11 @@ $(function() {
           'strokeColor': 'rgba(0, 0, 0, 0.2)',
           'fillColor': 'green',
           'fillColorAlpha': 0.2
+        },
+        'umd:Article': {
+          'strokeColor': 'rgba(0, 0, 0, 0.2)',
+          'fillColor': 'green',
+          'fillColorAlpha': 0.2
         }
       }
     },

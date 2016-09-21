@@ -1,8 +1,7 @@
 # mirador-static
 
-Current Mirador version: `v2.1.0-rc5` IIIF/mirador: [v2.1.0-rc5](https://github.com/IIIF/mirador/tree/v2.1.0-rc5)
+Current Mirador version: `v2.1.0` IIIF/mirador: [v2.1.0](https://github.com/ProjectMirador/mirador/releases/tag/v2.1.0)
 with modification at [7145be6](https://github.com/xtai-umd/mirador/commit/7145be67a645ebd8f0d648dd86ea63e5c2a2ec73) in xtai-umd/mirador.
-
 
 ## Running this version
 
@@ -23,7 +22,26 @@ Four annotation files are included:
 
 These files are referenced in the local manifest file [`manifest.json`](manifest.json) for page 1 and 2.
 
-Annotation with @type: `umd:searchResult` and `umd:articleSegment` will have different appearance according to the [`site.js`](site.js).
+Annotation with @type: `umd:searchResult` and `umd:articleSegment` will have different appearance according to the seetings of `'annotationTypeStyles'` in [`site.js`](site.js):
+```js
+'annotationTypeStyles': {
+  'umd:searchResult': {
+    'strokeColor': 'rgba(255, 255, 255, 0.2)',
+    'fillColor': 'yellow',
+    'fillColorAlpha': 0.2
+  },
+  'umd:articleSegment': {
+    'strokeColor': 'rgba(0, 0, 0, 0.2)',
+    'fillColor': 'green',
+    'fillColorAlpha': 0.2
+  },
+  'umd:Article': {
+    'strokeColor': 'rgba(0, 0, 0, 0.2)',
+    'fillColor': 'green',
+    'fillColorAlpha': 0.2
+  }
+}
+```
 
 An example oa:annotation:
 ```json
