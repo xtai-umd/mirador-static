@@ -22,7 +22,7 @@ Four annotation files are included:
 
 These files are referenced in the local manifest file [`manifest.json`](manifest.json) for page 1 and 2.
 
-`annotationTypeStyles` now supports customizable annotation styles, hovering styles, and abaility to show or hide annotation tooltips.  
+`annotationTypeStyles` now supports customizable annotation styles, hovering styles, and ability to show or hide annotation tooltips.  
 
 Annotation with @type: `umd:searchResult`, `umd:articleSegment`, and `umd:Article` will have different appearance according to the seetings of `'annotationTypeStyles'` in [`site.js`](site.js):
 ```js
@@ -44,6 +44,7 @@ Annotation with @type: `umd:searchResult`, `umd:articleSegment`, and `umd:Articl
     'hoverFillColor': 'yellow',
     'hoverFillColorAlpha': 0.5,
     'notShowTooltip': true
+  },
   'umd:Article': {
     'strokeColor': 'rgba(255, 255, 255, 0)',
     'fillColor': 'green',
