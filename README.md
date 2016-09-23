@@ -1,7 +1,7 @@
 # mirador-static
 
 Current Mirador version: `v2.1.0` IIIF/mirador: [v2.1.0](https://github.com/ProjectMirador/mirador/releases/tag/v2.1.0)
-with modification at [7145be6](https://github.com/xtai-umd/mirador/commit/7145be67a645ebd8f0d648dd86ea63e5c2a2ec73) in xtai-umd/mirador.
+with modification at [v2.1.0-10-f8f72b0](https://github.com/xtai-umd/mirador/commit/f8f72b0) in xtai-umd/mirador.
 
 ## Running this version
 
@@ -22,7 +22,9 @@ Four annotation files are included:
 
 These files are referenced in the local manifest file [`manifest.json`](manifest.json) for page 1 and 2.
 
-Annotation with @type: `umd:searchResult` and `umd:articleSegment` will have different appearance according to the seetings of `'annotationTypeStyles'` in [`site.js`](site.js):
+`annotationTypeStyles` now supports customizable annotation styles, hovering styles, and abaility to show or hide annotation tooltips.  
+
+Annotation with @type: `umd:searchResult`, `umd:articleSegment`, and `umd:Article` will have different appearance according to the seetings of `'annotationTypeStyles'` in [`site.js`](site.js):
 ```js
 'annotationTypeStyles': {
   'umd:searchResult': {
@@ -31,7 +33,8 @@ Annotation with @type: `umd:searchResult` and `umd:articleSegment` will have dif
     'fillColorAlpha': 0.1,
     'hoverColor': 'rgba(255, 255, 255, 0)',
     'hoverFillColor': 'yellow',
-    'hoverFillColorAlpha': 0.5
+    'hoverFillColorAlpha': 0.5,
+    'notShowTooltip': true
   },
   'umd:articleSegment': {
     'strokeColor': 'rgba(0, 0, 0, 0.2)',
@@ -39,8 +42,8 @@ Annotation with @type: `umd:searchResult` and `umd:articleSegment` will have dif
     'fillColorAlpha': 0.1,
     'hoverColor': 'rgba(255, 255, 255, 0.2)',
     'hoverFillColor': 'yellow',
-    'hoverFillColorAlpha': 0.5
-  },
+    'hoverFillColorAlpha': 0.5,
+    'notShowTooltip': true
   'umd:Article': {
     'strokeColor': 'rgba(255, 255, 255, 0)',
     'fillColor': 'green',
