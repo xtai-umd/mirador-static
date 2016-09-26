@@ -86,7 +86,7 @@ $(function() {
           'hoverColor': 'rgba(255, 255, 255, 0)',
           'hoverFillColor': 'yellow',
           'hoverFillColorAlpha': 0.5,
-          'notShowTooltip': true
+          'hideTooltip': true
         },
         'umd:articleSegment': {
           'strokeColor': 'rgba(0, 0, 0, 0.2)',
@@ -95,7 +95,7 @@ $(function() {
           'hoverColor': 'rgba(255, 255, 255, 0.2)',
           'hoverFillColor': 'yellow',
           'hoverFillColorAlpha': 0.5,
-          'notShowTooltip': true
+          'hideTooltip': true
         },
         'umd:Article': {
           'strokeColor': 'rgba(255, 255, 255, 0)',
