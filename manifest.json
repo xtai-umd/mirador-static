@@ -44,7 +44,7 @@
     {
       "canvases": [
         {
-          "thumbnail": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_garlic/sn83045081/00296022548/1902011501/0098.tif/full/400,/0/default.jpg",
+          "thumbnail": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_diamondbackfy16_Sample/sn90057049/7637/1926011201/0002.tif/full/400,/0/default.jpg",
           "images": [
             {
               "motivation": "sc:painting",
@@ -55,82 +55,12 @@
                 "height": 10661,
                 "service": {
                   "@context": "http://iiif.io/api/image/2/context.json",
-                  "@id": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_garlic/sn83045081/00296022548/1902011501/0098.tif",
+                  "@id": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_diamondbackfy16_Sample/sn90057049/7637/1926011201/0002.tif",
                   "profile": "http://iiif.io/api/image/2/level0.json"
                 },
                 "@type": "dctypes:Image"
               },
               "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/1",
-              "@type": "oa:Annotation"
-            }
-          ],
-          "otherContent": [
-            {
-              "@id":"annotations/annotation-p1-static.json",
-              "@type":"sc:AnnotationList"
-            },
-            {
-              "@id":"annotations/annotation-p1-dynamic.json",
-              "@type":"sc:AnnotationList"
-            }
-          ],
-          "width": 7285,
-          "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/1",
-          "height": 10661,
-          "label": "page 1",
-          "@type": "sc:Canvas"
-        },
-        {
-          "thumbnail": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_garlic/sn83045081/00296022548/1902011501/0099.tif/full/400,/0/default.jpg",
-          "images": [
-            {
-              "motivation": "sc:painting",
-              "resource": {
-                "format": "image/jpeg",
-                "width": 7334,
-                "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/2",
-                "height": 10650,
-                "service": {
-                  "@context": "http://iiif.io/api/image/2/context.json",
-                  "@id": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_garlic/sn83045081/00296022548/1902011501/0099.tif",
-                  "profile": "http://iiif.io/api/image/2/level0.json"
-                },
-                "@type": "dctypes:Image"
-              },
-              "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/2",
-              "@type": "oa:Annotation"
-            }
-          ],
-          "otherContent": [
-            {
-              "@id":"annotations/annotation-lines/annotation-lines-1.json",
-              "@type":"sc:AnnotationList"
-            }
-          ],
-          "width": 7334,
-          "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/2",
-          "height": 10650,
-          "label": "page 2",
-          "@type": "sc:Canvas"
-        },
-        {
-          "thumbnail": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_garlic/sn83045081/00296022548/1902011501/0100.tif/full/400,/0/default.jpg",
-          "images": [
-            {
-              "motivation": "sc:painting",
-              "resource": {
-                "format": "image/jpeg",
-                "width": 7285,
-                "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/3",
-                "height": 10661,
-                "service": {
-                  "@context": "http://iiif.io/api/image/2/context.json",
-                  "@id": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_garlic/sn83045081/00296022548/1902011501/0100.tif",
-                  "profile": "http://iiif.io/api/image/2/level0.json"
-                },
-                "@type": "dctypes:Image"
-              },
-              "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/3",
               "@type": "oa:Annotation"
             }
           ],
@@ -189,24 +119,202 @@
             }
           ],
           "width": 7285,
+          "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/1",
+          "height": 10661,
+          "label": "page 1",
+          "@type": "sc:Canvas"
+        },
+        {
+          "thumbnail": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_diamondbackfy16_Sample/sn90057049/7637/1926011201/0003.tif/full/400,/0/default.jpg",
+          "images": [
+            {
+              "motivation": "sc:painting",
+              "resource": {
+                "format": "image/jpeg",
+                "width": 7285,
+                "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/2",
+                "height": 10661,
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_diamondbackfy16_Sample/sn90057049/7637/1926011201/0003.tif",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "@type": "dctypes:Image"
+              },
+              "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/2",
+              "@type": "oa:Annotation"
+            }
+          ],
+          "otherContent": [
+            {
+              "@id":"annotations/annotation-articles/page2/annotation-article-14.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page2/annotation-article-15.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page2/annotation-article-16.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page2/annotation-article-17.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page2/annotation-article-18.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page2/annotation-article-19.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page2/annotation-article-20.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page2/annotation-article-21.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page2/annotation-article-22.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page2/annotation-article-23.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page2/annotation-article-24.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page2/annotation-article-25.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page2/annotation-article-26.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page2/annotation-article-27.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page2/annotation-article-28.json",
+              "@type":"sc:AnnotationList"
+            }
+          ],
+          "width": 7285,
+          "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/2",
+          "height": 10661,
+          "label": "page 2",
+          "@type": "sc:Canvas"
+        },
+        {
+          "thumbnail": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_diamondbackfy16_Sample/sn90057049/7637/1926011201/0004.tif/full/400,/0/default.jpg",
+          "images": [
+            {
+              "motivation": "sc:painting",
+              "resource": {
+                "format": "image/jpeg",
+                "width": 7285,
+                "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/3",
+                "height": 10661,
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_diamondbackfy16_Sample/sn90057049/7637/1926011201/0004.tif",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "@type": "dctypes:Image"
+              },
+              "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/3",
+              "@type": "oa:Annotation"
+            }
+          ],
+          "otherContent": [
+            {
+              "@id":"annotations/annotation-articles/page3/annotation-article-29.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page3/annotation-article-30.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page3/annotation-article-31.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page3/annotation-article-32.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page3/annotation-article-33.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page3/annotation-article-34.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page3/annotation-article-35.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page3/annotation-article-36.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page3/annotation-article-37.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page3/annotation-article-38.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page3/annotation-article-39.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page3/annotation-article-40.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page3/annotation-article-41.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page3/annotation-article-42.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page3/annotation-article-43.json",
+              "@type":"sc:AnnotationList"
+            }
+          ],
+          "width": 7285,
           "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/3",
           "height": 10661,
           "label": "page 3",
           "@type": "sc:Canvas"
         },
         {
-          "thumbnail": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_garlic/sn83045081/00296022548/1902011501/0101.tif/full/400,/0/default.jpg",
+          "thumbnail": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_diamondbackfy16_Sample/sn90057049/7637/1926011201/0005.tif/full/400,/0/default.jpg",
           "images": [
             {
               "motivation": "sc:painting",
               "resource": {
                 "format": "image/jpeg",
-                "width": 7315,
+                "width": 7285,
                 "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/4",
-                "height": 10657,
+                "height": 10661,
                 "service": {
                   "@context": "http://iiif.io/api/image/2/context.json",
-                  "@id": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_garlic/sn83045081/00296022548/1902011501/0101.tif",
+                  "@id": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_diamondbackfy16_Sample/sn90057049/7637/1926011201/0005.tif",
                   "profile": "http://iiif.io/api/image/2/level0.json"
                 },
                 "@type": "dctypes:Image"
@@ -215,25 +323,47 @@
               "@type": "oa:Annotation"
             }
           ],
-          "width": 7315,
+          "otherContent": [
+            {
+              "@id":"annotations/annotation-articles/page4/annotation-article-44.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page4/annotation-article-45.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page4/annotation-article-46.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page4/annotation-article-47.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-articles/page4/annotation-article-48.json",
+              "@type":"sc:AnnotationList"
+            }
+          ],
+          "width": 7285,
           "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/4",
-          "height": 10657,
+          "height": 10661,
           "label": "page 4",
           "@type": "sc:Canvas"
         },
         {
-          "thumbnail": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_garlic/sn83045081/00296022548/1902011501/0102.tif/full/400,/0/default.jpg",
+          "thumbnail": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_diamondbackfy16_Sample/sn90057049/7637/1926011201/0002.tif/full/400,/0/default.jpg",
           "images": [
             {
               "motivation": "sc:painting",
               "resource": {
                 "format": "image/jpeg",
-                "width": 7307,
+                "width": 7334,
                 "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/5",
-                "height": 10620,
+                "height": 10650,
                 "service": {
                   "@context": "http://iiif.io/api/image/2/context.json",
-                  "@id": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_garlic/sn83045081/00296022548/1902011501/0102.tif",
+                  "@id": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_diamondbackfy16_Sample/sn90057049/7637/1926011201/0002.tif",
                   "profile": "http://iiif.io/api/image/2/level0.json"
                 },
                 "@type": "dctypes:Image"
@@ -242,25 +372,31 @@
               "@type": "oa:Annotation"
             }
           ],
-          "width": 7307,
+          "otherContent": [
+            {
+              "@id":"annotations/annotation-lines/annotation-lines-1.json",
+              "@type":"sc:AnnotationList"
+            }
+          ],
+          "width": 7334,
           "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/5",
-          "height": 10620,
-          "label": "page 5",
+          "height": 10650,
+          "label": "page 2-1",
           "@type": "sc:Canvas"
         },
         {
-          "thumbnail": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_garlic/sn83045081/00296022548/1902011501/0103.tif/full/400,/0/default.jpg",
+          "thumbnail": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_diamondbackfy16_Sample/sn90057049/7637/1926011201/0003.tif/full/400,/0/default.jpg",
           "images": [
             {
               "motivation": "sc:painting",
               "resource": {
                 "format": "image/jpeg",
-                "width": 7285,
+                "width": 7334,
                 "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/6",
-                "height": 10661,
+                "height": 10650,
                 "service": {
                   "@context": "http://iiif.io/api/image/2/context.json",
-                  "@id": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_garlic/sn83045081/00296022548/1902011501/0103.tif",
+                  "@id": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_diamondbackfy16_Sample/sn90057049/7637/1926011201/0003.tif",
                   "profile": "http://iiif.io/api/image/2/level0.json"
                 },
                 "@type": "dctypes:Image"
@@ -269,10 +405,119 @@
               "@type": "oa:Annotation"
             }
           ],
-          "width": 7285,
+          "otherContent": [
+            {
+              "@id":"annotations/annotation-lines/annotation-lines-2.json",
+              "@type":"sc:AnnotationList"
+            }
+          ],
+          "width": 7334,
           "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/6",
+          "height": 10650,
+          "label": "page 2-2",
+          "@type": "sc:Canvas"
+        },
+        {
+          "thumbnail": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_diamondbackfy16_Sample/sn90057049/7637/1926011201/0004.tif/full/400,/0/default.jpg",
+          "images": [
+            {
+              "motivation": "sc:painting",
+              "resource": {
+                "format": "image/jpeg",
+                "width": 7334,
+                "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/7",
+                "height": 10650,
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_diamondbackfy16_Sample/sn90057049/7637/1926011201/0004.tif",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "@type": "dctypes:Image"
+              },
+              "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/7",
+              "@type": "oa:Annotation"
+            }
+          ],
+          "otherContent": [
+            {
+              "@id":"annotations/annotation-lines/annotation-lines-3.json",
+              "@type":"sc:AnnotationList"
+            }
+          ],
+          "width": 7334,
+          "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/7",
+          "height": 10650,
+          "label": "page 2-3",
+          "@type": "sc:Canvas"
+        },
+        {
+          "thumbnail": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_diamondbackfy16_Sample/sn90057049/7637/1926011201/0005.tif/full/400,/0/default.jpg",
+          "images": [
+            {
+              "motivation": "sc:painting",
+              "resource": {
+                "format": "image/jpeg",
+                "width": 7334,
+                "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/8",
+                "height": 10650,
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_diamondbackfy16_Sample/sn90057049/7637/1926011201/0005.tif",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "@type": "dctypes:Image"
+              },
+              "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/8",
+              "@type": "oa:Annotation"
+            }
+          ],
+          "otherContent": [
+            {
+              "@id":"annotations/annotation-lines/annotation-lines-4.json",
+              "@type":"sc:AnnotationList"
+            }
+          ],
+          "width": 7334,
+          "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/8",
+          "height": 10650,
+          "label": "page 2-4",
+          "@type": "sc:Canvas"
+        },
+        {
+          "thumbnail": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_garlic/sn83045081/00296022548/1902011501/0098.tif/full/400,/0/default.jpg",
+          "images": [
+            {
+              "motivation": "sc:painting",
+              "resource": {
+                "format": "image/jpeg",
+                "width": 7285,
+                "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/9",
+                "height": 10661,
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_garlic/sn83045081/00296022548/1902011501/0098.tif",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "@type": "dctypes:Image"
+              },
+              "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/9",
+              "@type": "oa:Annotation"
+            }
+          ],
+          "otherContent": [
+            {
+              "@id":"annotations/annotation-p1-static.json",
+              "@type":"sc:AnnotationList"
+            },
+            {
+              "@id":"annotations/annotation-p1-dynamic.json",
+              "@type":"sc:AnnotationList"
+            }
+          ],
+          "width": 7285,
+          "@id": "http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/9",
           "height": 10661,
-          "label": "page 6",
+          "label": "page demo",
           "@type": "sc:Canvas"
         }
       ],

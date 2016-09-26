@@ -44986,7 +44986,7 @@ return paper;
             };
             var hideTooltip = false;
             if (shapeArray[idx].hitTest(location, hitOptions)) {
-              if(shapeTool.onHover){
+              if(shapeTool.onHover && !shapeArray[idx].data.hovered){              
                 for (var styleKey in annotationTypeStyles) {
                   if (annotationTypeStyles.hasOwnProperty(styleKey) && shapeArray[idx].data.annotation['@type'].includes(styleKey)) {
                     if (typeof annotationTypeStyles[styleKey].hoverColor !== 'undefined') {
@@ -46646,19 +46646,17 @@ return paper;
       this.fillColor = this.state.getStateProperty('drawingToolsSettings').fillColor;
       this.fillColorAlpha = this.state.getStateProperty('drawingToolsSettings').fillColorAlpha;
       for (var key in annotationTypeStyles) {
-        if (annotationTypeStyles.hasOwnProperty(key)) {
-          if (annotation['@type'].includes(key)) {
-            if (typeof annotationTypeStyles[key].strokeColor !== 'undefined') {
-              this.strokeColor = annotationTypeStyles[key].strokeColor;
-            }
-            if (typeof annotationTypeStyles[key].fillColor !== 'undefined') {
-              this.fillColor = annotationTypeStyles[key].fillColor;
-            }
-            if (typeof annotationTypeStyles[key].fillColorAlpha !== 'undefined') {
-              this.fillColorAlpha = annotationTypeStyles[key].fillColorAlpha;
-            }
-            break;
+        if (annotationTypeStyles.hasOwnProperty(key) && annotation['@type'].includes(key)) {
+          if (typeof annotationTypeStyles[key].strokeColor !== 'undefined') {
+            this.strokeColor = annotationTypeStyles[key].strokeColor;
           }
+          if (typeof annotationTypeStyles[key].fillColor !== 'undefined') {
+            this.fillColor = annotationTypeStyles[key].fillColor;
+          }
+          if (typeof annotationTypeStyles[key].fillColorAlpha !== 'undefined') {
+            this.fillColorAlpha = annotationTypeStyles[key].fillColorAlpha;
+          }
+          break;
         }
       }
       this.mode = 'create';
