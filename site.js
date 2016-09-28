@@ -49,9 +49,9 @@ $(function() {
       'show': true,
       'buttons' : {
         'bookmark' : false,
-        'layout' : true,
+        'layout' : false,
         'options' : false,
-        'fullScreenViewer': true
+        'fullScreenViewer': false
       }
       //'height': 25,
       //'width': '100%'
@@ -80,30 +80,38 @@ $(function() {
       // 'newlyCreatedShapeStrokeWidthFactor': 0,
       'annotationTypeStyles': {
         'umd:searchResult': {
-          'strokeColor': 'rgba(255, 255, 255, 0)',
+          'strokeColor': 'rgba(255, 255, 0, 0.6)',
           'fillColor': 'yellow',
-          'fillColorAlpha': 0.1,
-          'hoverColor': 'rgba(255, 255, 255, 0)',
+          'fillColorAlpha': 0.4,
+          'hoverColor': 'rgba(255, 255, 0, 0.6)',
           'hoverFillColor': 'yellow',
-          'hoverFillColorAlpha': 0.5,
+          'hoverFillColorAlpha': 0.6,
           'hideTooltip': true
         },
         'umd:articleSegment': {
-          'strokeColor': 'rgba(0, 0, 0, 0.2)',
+          'strokeColor': 'rgba(255, 255, 255, 0.2)',
           'fillColor': 'green',
           'fillColorAlpha': 0.1,
           'hoverColor': 'rgba(255, 255, 255, 0.2)',
-          'hoverFillColor': 'yellow',
-          'hoverFillColorAlpha': 0.5,
+          'hoverFillColor': 'green',
+          'hoverFillColorAlpha': 0.4,
           'hideTooltip': true
         },
         'umd:Article': {
           'strokeColor': 'rgba(255, 255, 255, 0)',
           'fillColor': 'green',
-          'fillColorAlpha': 0,
+          'fillColorAlpha': 0.1,
           'hoverColor': 'rgba(255, 255, 255, 0.2)',
           'hoverFillColor': 'green',
-          'hoverFillColorAlpha': 0.2
+          'hoverFillColorAlpha': 0.4
+        },
+        'umd:Line': {
+          'strokeColor': 'rgba(255, 255, 0, 0.05)',
+          'fillColor': 'yellow',
+          'fillColorAlpha': 0.01,
+          'hoverColor': 'rgba(255, 255, 0, 0.4)',
+          'hoverFillColor': 'yellow',
+          'hoverFillColorAlpha': 0.4
         }
       }
     },

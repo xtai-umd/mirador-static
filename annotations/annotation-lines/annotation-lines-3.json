@@ -7,7 +7,7 @@
       "@id": "P3_TL00001",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -30,7 +30,7 @@
       "@id": "P3_TL00002",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -53,7 +53,7 @@
       "@id": "P3_TL00003",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -76,7 +76,7 @@
       "@id": "P3_TL00004",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -99,7 +99,7 @@
       "@id": "P3_TL00005",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -122,7 +122,7 @@
       "@id": "P3_TL00006",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -145,7 +145,7 @@
       "@id": "P3_TL00007",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -168,7 +168,7 @@
       "@id": "P3_TL00008",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -191,7 +191,7 @@
       "@id": "P3_TL00009",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -214,7 +214,7 @@
       "@id": "P3_TL00010",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -237,7 +237,7 @@
       "@id": "P3_TL00011",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -260,7 +260,7 @@
       "@id": "P3_TL00012",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -283,7 +283,7 @@
       "@id": "P3_TL00013",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -306,7 +306,7 @@
       "@id": "P3_TL00014",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -329,7 +329,7 @@
       "@id": "P3_TL00015",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -352,7 +352,7 @@
       "@id": "P3_TL00016",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -375,7 +375,7 @@
       "@id": "P3_TL00017",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -398,7 +398,7 @@
       "@id": "P3_TL00018",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -421,7 +421,7 @@
       "@id": "P3_TL00019",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -444,7 +444,7 @@
       "@id": "P3_TL00020",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -467,7 +467,7 @@
       "@id": "P3_TL00021",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -490,7 +490,7 @@
       "@id": "P3_TL00022",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -513,7 +513,7 @@
       "@id": "P3_TL00023",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -536,7 +536,7 @@
       "@id": "P3_TL00024",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -559,7 +559,7 @@
       "@id": "P3_TL00025",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -582,7 +582,7 @@
       "@id": "P3_TL00026",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -605,7 +605,7 @@
       "@id": "P3_TL00027",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -628,7 +628,7 @@
       "@id": "P3_TL00028",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -651,7 +651,7 @@
       "@id": "P3_TL00029",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -674,7 +674,7 @@
       "@id": "P3_TL00030",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -697,7 +697,7 @@
       "@id": "P3_TL00031",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -720,7 +720,7 @@
       "@id": "P3_TL00032",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -743,7 +743,7 @@
       "@id": "P3_TL00033",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -766,7 +766,7 @@
       "@id": "P3_TL00034",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -789,7 +789,7 @@
       "@id": "P3_TL00035",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -812,7 +812,7 @@
       "@id": "P3_TL00036",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -835,7 +835,7 @@
       "@id": "P3_TL00037",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -858,7 +858,7 @@
       "@id": "P3_TL00038",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -881,7 +881,7 @@
       "@id": "P3_TL00039",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -904,7 +904,7 @@
       "@id": "P3_TL00040",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -927,7 +927,7 @@
       "@id": "P3_TL00041",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -950,7 +950,7 @@
       "@id": "P3_TL00042",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -973,7 +973,7 @@
       "@id": "P3_TL00043",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -996,7 +996,7 @@
       "@id": "P3_TL00044",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1019,7 +1019,7 @@
       "@id": "P3_TL00045",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1042,7 +1042,7 @@
       "@id": "P3_TL00046",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1065,7 +1065,7 @@
       "@id": "P3_TL00047",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1088,7 +1088,7 @@
       "@id": "P3_TL00048",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1111,7 +1111,7 @@
       "@id": "P3_TL00049",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1134,7 +1134,7 @@
       "@id": "P3_TL00050",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1157,7 +1157,7 @@
       "@id": "P3_TL00051",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1180,7 +1180,7 @@
       "@id": "P3_TL00052",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1203,7 +1203,7 @@
       "@id": "P3_TL00053",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1226,7 +1226,7 @@
       "@id": "P3_TL00054",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1249,7 +1249,7 @@
       "@id": "P3_TL00055",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1272,7 +1272,7 @@
       "@id": "P3_TL00056",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1295,7 +1295,7 @@
       "@id": "P3_TL00057",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1318,7 +1318,7 @@
       "@id": "P3_TL00058",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1341,7 +1341,7 @@
       "@id": "P3_TL00059",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1364,7 +1364,7 @@
       "@id": "P3_TL00060",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1387,7 +1387,7 @@
       "@id": "P3_TL00061",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1410,7 +1410,7 @@
       "@id": "P3_TL00062",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1433,7 +1433,7 @@
       "@id": "P3_TL00063",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1456,7 +1456,7 @@
       "@id": "P3_TL00064",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1479,7 +1479,7 @@
       "@id": "P3_TL00065",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1502,7 +1502,7 @@
       "@id": "P3_TL00066",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1525,7 +1525,7 @@
       "@id": "P3_TL00067",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1548,7 +1548,7 @@
       "@id": "P3_TL00068",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1571,7 +1571,7 @@
       "@id": "P3_TL00069",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1594,7 +1594,7 @@
       "@id": "P3_TL00070",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1617,7 +1617,7 @@
       "@id": "P3_TL00071",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1640,7 +1640,7 @@
       "@id": "P3_TL00072",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1663,7 +1663,7 @@
       "@id": "P3_TL00073",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1686,7 +1686,7 @@
       "@id": "P3_TL00074",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1709,7 +1709,7 @@
       "@id": "P3_TL00075",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1732,7 +1732,7 @@
       "@id": "P3_TL00076",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1755,7 +1755,7 @@
       "@id": "P3_TL00077",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1778,7 +1778,7 @@
       "@id": "P3_TL00078",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1801,7 +1801,7 @@
       "@id": "P3_TL00079",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1824,7 +1824,7 @@
       "@id": "P3_TL00080",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1847,7 +1847,7 @@
       "@id": "P3_TL00081",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1870,7 +1870,7 @@
       "@id": "P3_TL00082",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1893,7 +1893,7 @@
       "@id": "P3_TL00083",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1916,7 +1916,7 @@
       "@id": "P3_TL00084",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1939,7 +1939,7 @@
       "@id": "P3_TL00085",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1962,7 +1962,7 @@
       "@id": "P3_TL00086",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -1985,7 +1985,7 @@
       "@id": "P3_TL00087",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2008,7 +2008,7 @@
       "@id": "P3_TL00088",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2031,7 +2031,7 @@
       "@id": "P3_TL00089",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2054,7 +2054,7 @@
       "@id": "P3_TL00090",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2077,7 +2077,7 @@
       "@id": "P3_TL00091",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2100,7 +2100,7 @@
       "@id": "P3_TL00092",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2123,7 +2123,7 @@
       "@id": "P3_TL00093",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2146,7 +2146,7 @@
       "@id": "P3_TL00094",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2169,7 +2169,7 @@
       "@id": "P3_TL00095",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2192,7 +2192,7 @@
       "@id": "P3_TL00096",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2215,7 +2215,7 @@
       "@id": "P3_TL00097",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2238,7 +2238,7 @@
       "@id": "P3_TL00098",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2261,7 +2261,7 @@
       "@id": "P3_TL00099",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2284,7 +2284,7 @@
       "@id": "P3_TL00100",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2307,7 +2307,7 @@
       "@id": "P3_TL00101",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2330,7 +2330,7 @@
       "@id": "P3_TL00102",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2353,7 +2353,7 @@
       "@id": "P3_TL00103",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2376,7 +2376,7 @@
       "@id": "P3_TL00104",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2399,7 +2399,7 @@
       "@id": "P3_TL00105",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2422,7 +2422,7 @@
       "@id": "P3_TL00106",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2445,7 +2445,7 @@
       "@id": "P3_TL00107",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2468,7 +2468,7 @@
       "@id": "P3_TL00108",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2491,7 +2491,7 @@
       "@id": "P3_TL00109",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2514,7 +2514,7 @@
       "@id": "P3_TL00110",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2537,7 +2537,7 @@
       "@id": "P3_TL00111",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2560,7 +2560,7 @@
       "@id": "P3_TL00112",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2583,7 +2583,7 @@
       "@id": "P3_TL00113",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2606,7 +2606,7 @@
       "@id": "P3_TL00114",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2629,7 +2629,7 @@
       "@id": "P3_TL00115",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2652,7 +2652,7 @@
       "@id": "P3_TL00116",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2675,7 +2675,7 @@
       "@id": "P3_TL00117",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2698,7 +2698,7 @@
       "@id": "P3_TL00118",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2721,7 +2721,7 @@
       "@id": "P3_TL00119",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2744,7 +2744,7 @@
       "@id": "P3_TL00120",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2767,7 +2767,7 @@
       "@id": "P3_TL00121",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2790,7 +2790,7 @@
       "@id": "P3_TL00122",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2813,7 +2813,7 @@
       "@id": "P3_TL00123",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2836,7 +2836,7 @@
       "@id": "P3_TL00124",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2859,7 +2859,7 @@
       "@id": "P3_TL00125",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2882,7 +2882,7 @@
       "@id": "P3_TL00126",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2905,7 +2905,7 @@
       "@id": "P3_TL00127",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2928,7 +2928,7 @@
       "@id": "P3_TL00128",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2951,7 +2951,7 @@
       "@id": "P3_TL00129",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2974,7 +2974,7 @@
       "@id": "P3_TL00130",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -2997,7 +2997,7 @@
       "@id": "P3_TL00131",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3020,7 +3020,7 @@
       "@id": "P3_TL00132",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3043,7 +3043,7 @@
       "@id": "P3_TL00133",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3066,7 +3066,7 @@
       "@id": "P3_TL00134",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3089,7 +3089,7 @@
       "@id": "P3_TL00135",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3112,7 +3112,7 @@
       "@id": "P3_TL00136",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3135,7 +3135,7 @@
       "@id": "P3_TL00137",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3158,7 +3158,7 @@
       "@id": "P3_TL00138",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3181,7 +3181,7 @@
       "@id": "P3_TL00139",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3204,7 +3204,7 @@
       "@id": "P3_TL00140",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3227,7 +3227,7 @@
       "@id": "P3_TL00141",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3250,7 +3250,7 @@
       "@id": "P3_TL00142",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3273,7 +3273,7 @@
       "@id": "P3_TL00143",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3296,7 +3296,7 @@
       "@id": "P3_TL00144",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3319,7 +3319,7 @@
       "@id": "P3_TL00145",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3342,7 +3342,7 @@
       "@id": "P3_TL00146",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3365,7 +3365,7 @@
       "@id": "P3_TL00147",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3388,7 +3388,7 @@
       "@id": "P3_TL00148",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3411,7 +3411,7 @@
       "@id": "P3_TL00149",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3434,7 +3434,7 @@
       "@id": "P3_TL00150",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3457,7 +3457,7 @@
       "@id": "P3_TL00151",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3480,7 +3480,7 @@
       "@id": "P3_TL00152",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3503,7 +3503,7 @@
       "@id": "P3_TL00153",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3526,7 +3526,7 @@
       "@id": "P3_TL00154",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3549,7 +3549,7 @@
       "@id": "P3_TL00155",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3572,7 +3572,7 @@
       "@id": "P3_TL00156",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3595,7 +3595,7 @@
       "@id": "P3_TL00157",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3618,7 +3618,7 @@
       "@id": "P3_TL00158",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3641,7 +3641,7 @@
       "@id": "P3_TL00159",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3664,7 +3664,7 @@
       "@id": "P3_TL00160",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3687,7 +3687,7 @@
       "@id": "P3_TL00161",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3710,7 +3710,7 @@
       "@id": "P3_TL00162",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3733,7 +3733,7 @@
       "@id": "P3_TL00163",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3756,7 +3756,7 @@
       "@id": "P3_TL00164",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3779,7 +3779,7 @@
       "@id": "P3_TL00165",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3802,7 +3802,7 @@
       "@id": "P3_TL00166",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3825,7 +3825,7 @@
       "@id": "P3_TL00167",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3848,7 +3848,7 @@
       "@id": "P3_TL00168",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3871,7 +3871,7 @@
       "@id": "P3_TL00169",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3894,7 +3894,7 @@
       "@id": "P3_TL00170",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3917,7 +3917,7 @@
       "@id": "P3_TL00171",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3940,7 +3940,7 @@
       "@id": "P3_TL00172",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3963,7 +3963,7 @@
       "@id": "P3_TL00173",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -3986,7 +3986,7 @@
       "@id": "P3_TL00174",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4009,7 +4009,7 @@
       "@id": "P3_TL00175",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4032,7 +4032,7 @@
       "@id": "P3_TL00176",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4055,7 +4055,7 @@
       "@id": "P3_TL00177",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4078,7 +4078,7 @@
       "@id": "P3_TL00178",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4101,7 +4101,7 @@
       "@id": "P3_TL00179",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4124,7 +4124,7 @@
       "@id": "P3_TL00180",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4147,7 +4147,7 @@
       "@id": "P3_TL00181",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4170,7 +4170,7 @@
       "@id": "P3_TL00182",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4193,7 +4193,7 @@
       "@id": "P3_TL00183",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4216,7 +4216,7 @@
       "@id": "P3_TL00184",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4239,7 +4239,7 @@
       "@id": "P3_TL00185",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4262,7 +4262,7 @@
       "@id": "P3_TL00186",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4285,7 +4285,7 @@
       "@id": "P3_TL00187",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4308,7 +4308,7 @@
       "@id": "P3_TL00188",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4331,7 +4331,7 @@
       "@id": "P3_TL00189",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4354,7 +4354,7 @@
       "@id": "P3_TL00190",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4377,7 +4377,7 @@
       "@id": "P3_TL00191",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4400,7 +4400,7 @@
       "@id": "P3_TL00192",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4423,7 +4423,7 @@
       "@id": "P3_TL00193",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4446,7 +4446,7 @@
       "@id": "P3_TL00194",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4469,7 +4469,7 @@
       "@id": "P3_TL00195",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4492,7 +4492,7 @@
       "@id": "P3_TL00196",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4515,7 +4515,7 @@
       "@id": "P3_TL00197",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4538,7 +4538,7 @@
       "@id": "P3_TL00198",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4561,7 +4561,7 @@
       "@id": "P3_TL00199",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4584,7 +4584,7 @@
       "@id": "P3_TL00200",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4607,7 +4607,7 @@
       "@id": "P3_TL00201",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4630,7 +4630,7 @@
       "@id": "P3_TL00202",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4653,7 +4653,7 @@
       "@id": "P3_TL00203",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4676,7 +4676,7 @@
       "@id": "P3_TL00204",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4699,7 +4699,7 @@
       "@id": "P3_TL00205",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4722,7 +4722,7 @@
       "@id": "P3_TL00206",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4745,7 +4745,7 @@
       "@id": "P3_TL00207",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4768,7 +4768,7 @@
       "@id": "P3_TL00208",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4791,7 +4791,7 @@
       "@id": "P3_TL00209",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4814,7 +4814,7 @@
       "@id": "P3_TL00210",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4837,7 +4837,7 @@
       "@id": "P3_TL00211",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4860,7 +4860,7 @@
       "@id": "P3_TL00212",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4883,7 +4883,7 @@
       "@id": "P3_TL00213",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4906,7 +4906,7 @@
       "@id": "P3_TL00214",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4929,7 +4929,7 @@
       "@id": "P3_TL00428",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4952,7 +4952,7 @@
       "@id": "P3_TL00215",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4975,7 +4975,7 @@
       "@id": "P3_TL00216",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -4998,7 +4998,7 @@
       "@id": "P3_TL00217",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5021,7 +5021,7 @@
       "@id": "P3_TL00218",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5044,7 +5044,7 @@
       "@id": "P3_TL00219",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5067,7 +5067,7 @@
       "@id": "P3_TL00220",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5090,7 +5090,7 @@
       "@id": "P3_TL00221",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5113,7 +5113,7 @@
       "@id": "P3_TL00222",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5136,7 +5136,7 @@
       "@id": "P3_TL00223",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5159,7 +5159,7 @@
       "@id": "P3_TL00224",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5182,7 +5182,7 @@
       "@id": "P3_TL00225",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5205,7 +5205,7 @@
       "@id": "P3_TL00226",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5228,7 +5228,7 @@
       "@id": "P3_TL00227",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5251,7 +5251,7 @@
       "@id": "P3_TL00228",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5274,7 +5274,7 @@
       "@id": "P3_TL00229",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5297,7 +5297,7 @@
       "@id": "P3_TL00230",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5320,7 +5320,7 @@
       "@id": "P3_TL00231",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5343,7 +5343,7 @@
       "@id": "P3_TL00232",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5366,7 +5366,7 @@
       "@id": "P3_TL00233",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5389,7 +5389,7 @@
       "@id": "P3_TL00234",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5412,7 +5412,7 @@
       "@id": "P3_TL00235",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5435,7 +5435,7 @@
       "@id": "P3_TL00236",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5458,7 +5458,7 @@
       "@id": "P3_TL00237",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5481,7 +5481,7 @@
       "@id": "P3_TL00238",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5504,7 +5504,7 @@
       "@id": "P3_TL00239",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5527,7 +5527,7 @@
       "@id": "P3_TL00240",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5550,7 +5550,7 @@
       "@id": "P3_TL00241",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5573,7 +5573,7 @@
       "@id": "P3_TL00242",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5596,7 +5596,7 @@
       "@id": "P3_TL00243",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5619,7 +5619,7 @@
       "@id": "P3_TL00244",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5642,7 +5642,7 @@
       "@id": "P3_TL00245",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5665,7 +5665,7 @@
       "@id": "P3_TL00246",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5688,7 +5688,7 @@
       "@id": "P3_TL00247",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5711,7 +5711,7 @@
       "@id": "P3_TL00248",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5734,7 +5734,7 @@
       "@id": "P3_TL00249",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5757,7 +5757,7 @@
       "@id": "P3_TL00250",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5780,7 +5780,7 @@
       "@id": "P3_TL00251",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5803,7 +5803,7 @@
       "@id": "P3_TL00252",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5826,7 +5826,7 @@
       "@id": "P3_TL00253",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5849,7 +5849,7 @@
       "@id": "P3_TL00254",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5872,7 +5872,7 @@
       "@id": "P3_TL00255",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5895,7 +5895,7 @@
       "@id": "P3_TL00256",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5918,7 +5918,7 @@
       "@id": "P3_TL00257",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5941,7 +5941,7 @@
       "@id": "P3_TL00258",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5964,7 +5964,7 @@
       "@id": "P3_TL00259",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -5987,7 +5987,7 @@
       "@id": "P3_TL00260",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6010,7 +6010,7 @@
       "@id": "P3_TL00261",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6033,7 +6033,7 @@
       "@id": "P3_TL00262",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6056,7 +6056,7 @@
       "@id": "P3_TL00263",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6079,7 +6079,7 @@
       "@id": "P3_TL00264",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6102,7 +6102,7 @@
       "@id": "P3_TL00265",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6125,7 +6125,7 @@
       "@id": "P3_TL00266",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6148,7 +6148,7 @@
       "@id": "P3_TL00267",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6171,7 +6171,7 @@
       "@id": "P3_TL00268",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6194,7 +6194,7 @@
       "@id": "P3_TL00269",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6217,7 +6217,7 @@
       "@id": "P3_TL00270",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6240,7 +6240,7 @@
       "@id": "P3_TL00271",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6263,7 +6263,7 @@
       "@id": "P3_TL00272",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6286,7 +6286,7 @@
       "@id": "P3_TL00273",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6309,7 +6309,7 @@
       "@id": "P3_TL00274",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6332,7 +6332,7 @@
       "@id": "P3_TL00275",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6355,7 +6355,7 @@
       "@id": "P3_TL00276",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6378,7 +6378,7 @@
       "@id": "P3_TL00277",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6401,7 +6401,7 @@
       "@id": "P3_TL00278",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6424,7 +6424,7 @@
       "@id": "P3_TL00279",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6447,7 +6447,7 @@
       "@id": "P3_TL00280",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6470,7 +6470,7 @@
       "@id": "P3_TL00281",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6493,7 +6493,7 @@
       "@id": "P3_TL00282",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6516,7 +6516,7 @@
       "@id": "P3_TL00283",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6539,7 +6539,7 @@
       "@id": "P3_TL00284",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6562,7 +6562,7 @@
       "@id": "P3_TL00285",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6585,7 +6585,7 @@
       "@id": "P3_TL00429",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6608,7 +6608,7 @@
       "@id": "P3_TL00430",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6631,7 +6631,7 @@
       "@id": "P3_TL00431",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6654,7 +6654,7 @@
       "@id": "P3_TL00432",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6677,7 +6677,7 @@
       "@id": "P3_TL00433",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6700,7 +6700,7 @@
       "@id": "P3_TL00434",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6723,7 +6723,7 @@
       "@id": "P3_TL00435",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6746,7 +6746,7 @@
       "@id": "P3_TL00436",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6769,7 +6769,7 @@
       "@id": "P3_TL00437",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6792,7 +6792,7 @@
       "@id": "P3_TL00438",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6815,7 +6815,7 @@
       "@id": "P3_TL00439",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6838,7 +6838,7 @@
       "@id": "P3_TL00440",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6861,7 +6861,7 @@
       "@id": "P3_TL00441",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6884,7 +6884,7 @@
       "@id": "P3_TL00442",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6907,7 +6907,7 @@
       "@id": "P3_TL00443",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6930,7 +6930,7 @@
       "@id": "P3_TL00444",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6953,7 +6953,7 @@
       "@id": "P3_TL00445",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6976,7 +6976,7 @@
       "@id": "P3_TL00446",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -6999,7 +6999,7 @@
       "@id": "P3_TL00447",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7022,7 +7022,7 @@
       "@id": "P3_TL00448",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7045,7 +7045,7 @@
       "@id": "P3_TL00449",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7068,7 +7068,7 @@
       "@id": "P3_TL00450",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7091,7 +7091,7 @@
       "@id": "P3_TL00451",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7114,7 +7114,7 @@
       "@id": "P3_TL00452",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7137,7 +7137,7 @@
       "@id": "P3_TL00453",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7160,7 +7160,7 @@
       "@id": "P3_TL00454",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7183,7 +7183,7 @@
       "@id": "P3_TL00455",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7206,7 +7206,7 @@
       "@id": "P3_TL00456",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7229,7 +7229,7 @@
       "@id": "P3_TL00286",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7252,7 +7252,7 @@
       "@id": "P3_TL00287",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7275,7 +7275,7 @@
       "@id": "P3_TL00288",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7298,7 +7298,7 @@
       "@id": "P3_TL00289",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7321,7 +7321,7 @@
       "@id": "P3_TL00290",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7344,7 +7344,7 @@
       "@id": "P3_TL00291",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7367,7 +7367,7 @@
       "@id": "P3_TL00292",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7390,7 +7390,7 @@
       "@id": "P3_TL00293",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7413,7 +7413,7 @@
       "@id": "P3_TL00294",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7436,7 +7436,7 @@
       "@id": "P3_TL00295",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7459,7 +7459,7 @@
       "@id": "P3_TL00296",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7482,7 +7482,7 @@
       "@id": "P3_TL00297",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7505,7 +7505,7 @@
       "@id": "P3_TL00298",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7528,7 +7528,7 @@
       "@id": "P3_TL00299",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7551,7 +7551,7 @@
       "@id": "P3_TL00300",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7574,7 +7574,7 @@
       "@id": "P3_TL00301",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7597,7 +7597,7 @@
       "@id": "P3_TL00302",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7620,7 +7620,7 @@
       "@id": "P3_TL00303",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7643,7 +7643,7 @@
       "@id": "P3_TL00304",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7666,7 +7666,7 @@
       "@id": "P3_TL00305",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7689,7 +7689,7 @@
       "@id": "P3_TL00306",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7712,7 +7712,7 @@
       "@id": "P3_TL00307",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7735,7 +7735,7 @@
       "@id": "P3_TL00308",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7758,7 +7758,7 @@
       "@id": "P3_TL00309",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7781,7 +7781,7 @@
       "@id": "P3_TL00310",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7804,7 +7804,7 @@
       "@id": "P3_TL00311",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7827,7 +7827,7 @@
       "@id": "P3_TL00312",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7850,7 +7850,7 @@
       "@id": "P3_TL00313",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7873,7 +7873,7 @@
       "@id": "P3_TL00314",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7896,7 +7896,7 @@
       "@id": "P3_TL00315",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7919,7 +7919,7 @@
       "@id": "P3_TL00316",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7942,7 +7942,7 @@
       "@id": "P3_TL00317",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7965,7 +7965,7 @@
       "@id": "P3_TL00318",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -7988,7 +7988,7 @@
       "@id": "P3_TL00319",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8011,7 +8011,7 @@
       "@id": "P3_TL00320",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8034,7 +8034,7 @@
       "@id": "P3_TL00321",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8057,7 +8057,7 @@
       "@id": "P3_TL00322",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8080,7 +8080,7 @@
       "@id": "P3_TL00323",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8103,7 +8103,7 @@
       "@id": "P3_TL00324",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8126,7 +8126,7 @@
       "@id": "P3_TL00325",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8149,7 +8149,7 @@
       "@id": "P3_TL00326",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8172,7 +8172,7 @@
       "@id": "P3_TL00327",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8195,7 +8195,7 @@
       "@id": "P3_TL00328",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8218,7 +8218,7 @@
       "@id": "P3_TL00329",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8241,7 +8241,7 @@
       "@id": "P3_TL00330",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8264,7 +8264,7 @@
       "@id": "P3_TL00331",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8287,7 +8287,7 @@
       "@id": "P3_TL00332",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8310,7 +8310,7 @@
       "@id": "P3_TL00333",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8333,7 +8333,7 @@
       "@id": "P3_TL00334",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8356,7 +8356,7 @@
       "@id": "P3_TL00335",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8379,7 +8379,7 @@
       "@id": "P3_TL00336",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8402,7 +8402,7 @@
       "@id": "P3_TL00337",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8425,7 +8425,7 @@
       "@id": "P3_TL00338",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8448,7 +8448,7 @@
       "@id": "P3_TL00339",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8471,7 +8471,7 @@
       "@id": "P3_TL00340",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8494,7 +8494,7 @@
       "@id": "P3_TL00341",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8517,7 +8517,7 @@
       "@id": "P3_TL00342",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8540,7 +8540,7 @@
       "@id": "P3_TL00343",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8563,7 +8563,7 @@
       "@id": "P3_TL00344",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8586,7 +8586,7 @@
       "@id": "P3_TL00345",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8609,7 +8609,7 @@
       "@id": "P3_TL00346",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8632,7 +8632,7 @@
       "@id": "P3_TL00347",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8655,7 +8655,7 @@
       "@id": "P3_TL00348",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8678,7 +8678,7 @@
       "@id": "P3_TL00349",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8701,7 +8701,7 @@
       "@id": "P3_TL00350",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8724,7 +8724,7 @@
       "@id": "P3_TL00351",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8747,7 +8747,7 @@
       "@id": "P3_TL00352",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8770,7 +8770,7 @@
       "@id": "P3_TL00353",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8793,7 +8793,7 @@
       "@id": "P3_TL00354",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8816,7 +8816,7 @@
       "@id": "P3_TL00355",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8839,7 +8839,7 @@
       "@id": "P3_TL00356",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8862,7 +8862,7 @@
       "@id": "P3_TL00357",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8885,7 +8885,7 @@
       "@id": "P3_TL00358",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8908,7 +8908,7 @@
       "@id": "P3_TL00359",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8931,7 +8931,7 @@
       "@id": "P3_TL00360",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8954,7 +8954,7 @@
       "@id": "P3_TL00361",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -8977,7 +8977,7 @@
       "@id": "P3_TL00362",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9000,7 +9000,7 @@
       "@id": "P3_TL00363",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9023,7 +9023,7 @@
       "@id": "P3_TL00364",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9046,7 +9046,7 @@
       "@id": "P3_TL00365",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9069,7 +9069,7 @@
       "@id": "P3_TL00366",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9092,7 +9092,7 @@
       "@id": "P3_TL00367",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9115,7 +9115,7 @@
       "@id": "P3_TL00368",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9138,7 +9138,7 @@
       "@id": "P3_TL00369",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9161,7 +9161,7 @@
       "@id": "P3_TL00370",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9184,7 +9184,7 @@
       "@id": "P3_TL00371",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9207,7 +9207,7 @@
       "@id": "P3_TL00372",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9230,7 +9230,7 @@
       "@id": "P3_TL00373",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9253,7 +9253,7 @@
       "@id": "P3_TL00374",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9276,7 +9276,7 @@
       "@id": "P3_TL00375",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9299,7 +9299,7 @@
       "@id": "P3_TL00376",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9322,7 +9322,7 @@
       "@id": "P3_TL00377",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9345,7 +9345,7 @@
       "@id": "P3_TL00378",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9368,7 +9368,7 @@
       "@id": "P3_TL00379",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9391,7 +9391,7 @@
       "@id": "P3_TL00380",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9414,7 +9414,7 @@
       "@id": "P3_TL00381",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9437,7 +9437,7 @@
       "@id": "P3_TL00382",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9460,7 +9460,7 @@
       "@id": "P3_TL00383",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9483,7 +9483,7 @@
       "@id": "P3_TL00384",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9506,7 +9506,7 @@
       "@id": "P3_TL00385",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9529,7 +9529,7 @@
       "@id": "P3_TL00386",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9552,7 +9552,7 @@
       "@id": "P3_TL00387",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9575,7 +9575,7 @@
       "@id": "P3_TL00388",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9598,7 +9598,7 @@
       "@id": "P3_TL00389",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9621,7 +9621,7 @@
       "@id": "P3_TL00390",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9644,7 +9644,7 @@
       "@id": "P3_TL00391",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9667,7 +9667,7 @@
       "@id": "P3_TL00392",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9690,7 +9690,7 @@
       "@id": "P3_TL00393",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9713,7 +9713,7 @@
       "@id": "P3_TL00394",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9736,7 +9736,7 @@
       "@id": "P3_TL00395",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9759,7 +9759,7 @@
       "@id": "P3_TL00396",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9782,7 +9782,7 @@
       "@id": "P3_TL00397",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9805,7 +9805,7 @@
       "@id": "P3_TL00398",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9828,7 +9828,7 @@
       "@id": "P3_TL00399",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9851,7 +9851,7 @@
       "@id": "P3_TL00400",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9874,7 +9874,7 @@
       "@id": "P3_TL00401",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9897,7 +9897,7 @@
       "@id": "P3_TL00457",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9920,7 +9920,7 @@
       "@id": "P3_TL00458",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9943,7 +9943,7 @@
       "@id": "P3_TL00459",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9966,7 +9966,7 @@
       "@id": "P3_TL00460",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -9989,7 +9989,7 @@
       "@id": "P3_TL00461",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10012,7 +10012,7 @@
       "@id": "P3_TL00462",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10035,7 +10035,7 @@
       "@id": "P3_TL00463",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10058,7 +10058,7 @@
       "@id": "P3_TL00464",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10081,7 +10081,7 @@
       "@id": "P3_TL00465",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10104,7 +10104,7 @@
       "@id": "P3_TL00466",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10127,7 +10127,7 @@
       "@id": "P3_TL00467",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10150,7 +10150,7 @@
       "@id": "P3_TL00468",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10173,7 +10173,7 @@
       "@id": "P3_TL00469",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10196,7 +10196,7 @@
       "@id": "P3_TL00470",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10219,7 +10219,7 @@
       "@id": "P3_TL00507",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10242,7 +10242,7 @@
       "@id": "P3_TL00508",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10265,7 +10265,7 @@
       "@id": "P3_TL00509",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10288,7 +10288,7 @@
       "@id": "P3_TL00510",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10311,7 +10311,7 @@
       "@id": "P3_TL00511",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10334,7 +10334,7 @@
       "@id": "P3_TL00512",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10357,7 +10357,7 @@
       "@id": "P3_TL00513",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10380,7 +10380,7 @@
       "@id": "P3_TL00514",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10403,7 +10403,7 @@
       "@id": "P3_TL00515",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10426,7 +10426,7 @@
       "@id": "P3_TL00516",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10449,7 +10449,7 @@
       "@id": "P3_TL00517",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10472,7 +10472,7 @@
       "@id": "P3_TL00518",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10495,7 +10495,7 @@
       "@id": "P3_TL00519",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10518,7 +10518,7 @@
       "@id": "P3_TL00520",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10541,7 +10541,7 @@
       "@id": "P3_TL00521",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10564,7 +10564,7 @@
       "@id": "P3_TL00522",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10587,7 +10587,7 @@
       "@id": "P3_TL00523",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10610,7 +10610,7 @@
       "@id": "P3_TL00524",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10633,7 +10633,7 @@
       "@id": "P3_TL00525",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10656,7 +10656,7 @@
       "@id": "P3_TL00526",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10679,7 +10679,7 @@
       "@id": "P3_TL00527",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10702,7 +10702,7 @@
       "@id": "P3_TL00528",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10725,7 +10725,7 @@
       "@id": "P3_TL00529",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10748,7 +10748,7 @@
       "@id": "P3_TL00530",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10771,7 +10771,7 @@
       "@id": "P3_TL00402",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10794,7 +10794,7 @@
       "@id": "P3_TL00403",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10817,7 +10817,7 @@
       "@id": "P3_TL00404",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10840,7 +10840,7 @@
       "@id": "P3_TL00405",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10863,7 +10863,7 @@
       "@id": "P3_TL00406",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10886,7 +10886,7 @@
       "@id": "P3_TL00407",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10909,7 +10909,7 @@
       "@id": "P3_TL00408",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10932,7 +10932,7 @@
       "@id": "P3_TL00409",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10955,7 +10955,7 @@
       "@id": "P3_TL00410",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -10978,7 +10978,7 @@
       "@id": "P3_TL00411",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11001,7 +11001,7 @@
       "@id": "P3_TL00412",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11024,7 +11024,7 @@
       "@id": "P3_TL00413",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11047,7 +11047,7 @@
       "@id": "P3_TL00414",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11070,7 +11070,7 @@
       "@id": "P3_TL00415",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11093,7 +11093,7 @@
       "@id": "P3_TL00416",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11116,7 +11116,7 @@
       "@id": "P3_TL00417",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11139,7 +11139,7 @@
       "@id": "P3_TL00418",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11162,7 +11162,7 @@
       "@id": "P3_TL00419",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11185,7 +11185,7 @@
       "@id": "P3_TL00420",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11208,7 +11208,7 @@
       "@id": "P3_TL00421",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11231,7 +11231,7 @@
       "@id": "P3_TL00422",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11254,7 +11254,7 @@
       "@id": "P3_TL00423",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11277,7 +11277,7 @@
       "@id": "P3_TL00424",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11300,7 +11300,7 @@
       "@id": "P3_TL00425",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11323,7 +11323,7 @@
       "@id": "P3_TL00426",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11346,7 +11346,7 @@
       "@id": "P3_TL00427",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11369,7 +11369,7 @@
       "@id": "P3_TL00471",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11392,7 +11392,7 @@
       "@id": "P3_TL00472",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11415,7 +11415,7 @@
       "@id": "P3_TL00473",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11438,7 +11438,7 @@
       "@id": "P3_TL00474",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11461,7 +11461,7 @@
       "@id": "P3_TL00475",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11484,7 +11484,7 @@
       "@id": "P3_TL00476",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11507,7 +11507,7 @@
       "@id": "P3_TL00477",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11530,7 +11530,7 @@
       "@id": "P3_TL00478",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11553,7 +11553,7 @@
       "@id": "P3_TL00479",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11576,7 +11576,7 @@
       "@id": "P3_TL00480",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11599,7 +11599,7 @@
       "@id": "P3_TL00481",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11622,7 +11622,7 @@
       "@id": "P3_TL00482",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11645,7 +11645,7 @@
       "@id": "P3_TL00483",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11668,7 +11668,7 @@
       "@id": "P3_TL00484",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11691,7 +11691,7 @@
       "@id": "P3_TL00485",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11714,7 +11714,7 @@
       "@id": "P3_TL00486",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11737,7 +11737,7 @@
       "@id": "P3_TL00487",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11760,7 +11760,7 @@
       "@id": "P3_TL00488",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11783,7 +11783,7 @@
       "@id": "P3_TL00489",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11806,7 +11806,7 @@
       "@id": "P3_TL00490",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11829,7 +11829,7 @@
       "@id": "P3_TL00491",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11852,7 +11852,7 @@
       "@id": "P3_TL00492",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11875,7 +11875,7 @@
       "@id": "P3_TL00493",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11898,7 +11898,7 @@
       "@id": "P3_TL00495",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11921,7 +11921,7 @@
       "@id": "P3_TL00496",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11944,7 +11944,7 @@
       "@id": "P3_TL00497",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11967,7 +11967,7 @@
       "@id": "P3_TL00498",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -11990,7 +11990,7 @@
       "@id": "P3_TL00499",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -12013,7 +12013,7 @@
       "@id": "P3_TL00500",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -12036,7 +12036,7 @@
       "@id": "P3_TL00501",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -12059,7 +12059,7 @@
       "@id": "P3_TL00502",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -12082,7 +12082,7 @@
       "@id": "P3_TL00503",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -12105,7 +12105,7 @@
       "@id": "P3_TL00504",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -12128,7 +12128,7 @@
       "@id": "P3_TL00505",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
@@ -12151,7 +12151,7 @@
       "@id": "P3_TL00506",
       "@type": [
         "oa:Annotation",
-        "umd:Article"
+        "umd:Line"
       ],
       "resource": [
         {
