@@ -8,7 +8,7 @@ jQuery(function() {
 
 $(function() {
   Mirador({
-    "id": "viewer",
+    "id": "mirador-viewer",
     "mainMenuSettings": {
       'show': true
     },
