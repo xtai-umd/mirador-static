@@ -47546,10 +47546,12 @@ return paper;
     onHover: function(activate, shape, hoverColor, hoverFillColor, hoverFillColorAlpha){
       // shape needs to have hovered styles
       if(activate && !shape.data.hovered){
-        if (typeof shape.data.annotation !== 'undefined' && typeof umdMiradorOCRHovered !== 'undefined' && typeof umdMiradorOCRText !== 'undefined') {
-          umdMiradorOCRHovered = true;
-          jQuery('div.openseadragon-canvas').css('cursor', 'pointer');
-          umdMiradorOCRText = shape.data.annotation.resource[0].chars;
+        if(typeof umdMiradorOCR !== 'undefined' && umdMiradorOCR){
+          if(typeof shape.data.annotation !== 'undefined' && typeof umdMiradorOCRHovered !== 'undefined' && typeof umdMiradorOCRText !== 'undefined'){
+            umdMiradorOCRHovered = true;
+            jQuery('div.openseadragon-canvas').css('cursor', 'pointer');
+            umdMiradorOCRText = shape.data.annotation.resource[0].chars;
+          }
         }
         shape.data.nonHoverStroke = shape.strokeColor.clone();
         shape.data.nonHoverFill = shape.fillColor.clone();
@@ -47560,7 +47562,7 @@ return paper;
       }
       // shape is not longer hovered
       if(!activate && shape.data.hovered){
-        if (typeof umdMiradorOCRHovered !== 'undefined') {
+        if(typeof umdMiradorOCR !== 'undefined' && umdMiradorOCR && typeof umdMiradorOCRHovered !== 'undefined'){
           umdMiradorOCRHovered = false;
           jQuery('div.openseadragon-canvas').css('cursor', 'default');
         }
@@ -50679,6 +50681,9 @@ bindEvents: function() {
               id: _this.windowId,
               annotationState: to
             });
+            if (typeof umdMiradorOCR !== 'undefined') {
+              umdMiradorOCR = true;
+            }
           },
           ondisplayOn: function(event, from, to) {
             _this.eventEmitter.publish('HUD_ADD_CLASS.'+_this.windowId, ['.mirador-osd-annotations-layer', 'selected']);
@@ -50694,6 +50699,9 @@ bindEvents: function() {
               id: _this.windowId,
               annotationState: to
             });
+            if (typeof umdMiradorOCR !== 'undefined') {
+              umdMiradorOCR = true;
+            }
           },
           ondisplayOff: function(event, from, to) {
             if (_this.annoEndpointAvailable) {
@@ -50708,6 +50716,9 @@ bindEvents: function() {
               id: _this.windowId,
               annotationState: to
             });
+            if (typeof umdMiradorOCR !== 'undefined') {
+              umdMiradorOCR = false;
+            }
           },
           onchoosePointer: function(event, from, to) {
             _this.eventEmitter.publish('HUD_REMOVE_CLASS.'+_this.windowId, ['.mirador-osd-edit-mode', 'selected']);
@@ -50720,6 +50731,9 @@ bindEvents: function() {
               id: _this.windowId,
               annotationState: to
             });
+            if (typeof umdMiradorOCR !== 'undefined') {
+              umdMiradorOCR = false;
+            }
           },
           onchooseShape: function(event, from, to, shape) {
             _this.eventEmitter.publish('HUD_REMOVE_CLASS.'+_this.windowId, ['.mirador-osd-pointer-mode', 'selected']);
@@ -50735,6 +50749,9 @@ bindEvents: function() {
               id: _this.windowId,
               annotationState: to
             });
+            if (typeof umdMiradorOCR !== 'undefined') {
+              umdMiradorOCR = false;
+            }
           },
           onchangeShape: function(event, from, to, shape) {
             _this.eventEmitter.publish('HUD_REMOVE_CLASS.'+_this.windowId, ['.mirador-osd-pointer-mode', 'selected']);
@@ -50750,6 +50767,9 @@ bindEvents: function() {
               id: _this.windowId,
               annotationState: to
             });
+            if (typeof umdMiradorOCR !== 'undefined') {
+              umdMiradorOCR = false;
+            }
           },
           onrefresh: function(event, from, to) {
             //TODO

@@ -4,6 +4,7 @@
 var m = '';
 
 // Required variables and event listener for OCR text side-by-side feature
+var umdMiradorOCR = true;
 var umdMiradorOCRText = '';
 var umdMiradorOCRHovered = false;
 $(document).click(function(){
