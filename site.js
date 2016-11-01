@@ -3,21 +3,10 @@
 // Mirador global instance
 var m = '';
 
-// Required variables and event listener for OCR text side-by-side feature
+// Required variables for OCR text side-by-side feature
 var umdMiradorOCR = true;
 var umdMiradorOCRText = '';
 var umdMiradorOCRHovered = false;
-$(document).click(function(){
-  if(umdMiradorOCRHovered && umdMiradorOCRText){
-    m.eventEmitter.publish('sidePanelVisibilityByTab', true);
-    m.eventEmitter.publish('sidePanelToggled');
-    m.eventEmitter.publish('sidePanelVisibilityByTab', true);
-    $('div.sidePanel').html('<h2>OCR Text</h2><p>' + umdMiradorOCRText.replace(/(?:\r\n|\r|\n)/g, ' ') + '</p>');
-    $('div.sidePanel').css('overflow', 'scroll');
-    $('div.sidePanel').css('width', '');
-    m.eventEmitter.publish('sidePanelToggled');
-  }
-});
 
 $(function() {
   // create temporary manifest uri
@@ -116,6 +105,36 @@ $(function() {
           }
         },
       });
+    },
+    complete: function (data) {
+      m.eventEmitter.subscribe('windowUpdated', function(event, windowId, options) {
+        var a = document.querySelectorAll('[id^="draw_canvas_"]')[0];
+        if (typeof a !== 'undefined') {
+          // Add event listener to osd annotation canvas
+          document.getElementById(a.id).removeEventListener('click', ocr);
+          document.getElementById(a.id).addEventListener('click', ocr);
+        }
+        // Enable selection on meta data inforamtion
+        $('div.content-container > div.overlay').mousemove(function(e){
+          e.stopPropagation();
+        });
+      });
     }
   });
 });
+
+// event listener for OCR text side-by-side feature
+function ocr() {
+  if (umdMiradorOCRHovered && umdMiradorOCRText) {
+    m.eventEmitter.publish('sidePanelVisibilityByTab', true);
+    m.eventEmitter.publish('sidePanelToggled');
+    m.eventEmitter.publish('sidePanelVisibilityByTab', true);
+    $('div.sidePanel').html('<h2>Selection Text</h2><p>' + umdMiradorOCRText.replace(/(?:\r\n|\r|\n)/g, ' ') + '</p>');
+    $('div.sidePanel').css('overflow', 'scroll');
+    $('div.sidePanel').css('width', '');
+    $('div.sidePanel').mousemove(function(e){
+      e.stopPropagation();
+    });
+    m.eventEmitter.publish('sidePanelToggled');
+  }
+}
