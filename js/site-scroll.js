@@ -1,12 +1,13 @@
-/* site-scroll */
+/* site */
 
 // Mirador global instance
 var m = '';
+var sidePanelVisible = false;
 
 // Required variables for OCR text side-by-side feature
 var umdMiradorOCR = true;
 var umdMiradorOCRText = '';
-var umdMiradorOCRHovered = false;
+var umdMiradorOCRHovered = 0;
 
 $(function() {
   // create temporary manifest uri
@@ -23,7 +24,7 @@ $(function() {
     success: function (data) {
       // get page CanvasID or first page
       // var canvasID = getCanvasID(iiifURLPrefix, manifestPcdmID, data);
-      // var canvasID = 'http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/2';
+      var canvasID = 'http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/2';
       m = Mirador({
         'id': 'mirador-viewer',
         'layout': '1x1',
@@ -39,7 +40,7 @@ $(function() {
           // loadedManifest: "http://iiif.harvardartmuseums.org/manifests/object/299843",
           // viewType: "ImageView",
           'loadedManifest': data['@id'],
-          // 'canvasID': canvasID,
+          'canvasID': canvasID,
           'viewType': 'ScrollView',
           'displayLayout': false,
           'sidePanel' : true,
@@ -106,18 +107,46 @@ $(function() {
         },
       });
     },
-    complete: function (data) {
-      m.eventEmitter.subscribe('windowUpdated', function(event, windowId, options) {
-        var a = document.querySelectorAll('[id^="draw_canvas_"]')[0];
-        if (typeof a !== 'undefined') {
-          // Add event listener to osd annotation canvas
-          document.getElementById(a.id).removeEventListener('click', ocr);
-          document.getElementById(a.id).addEventListener('click', ocr);
+    complete: function () {
+      m.eventEmitter.subscribe('windowUpdated', function(event, options) {
+        // when sidePanelVisible changed
+        if (typeof options.sidePanelVisible !== 'undefined') {
+          m.eventEmitter.publish('sidePanelToggled');
+          sidePanelVisible = options.sidePanelVisible;
+          $('div.sidePanel').css('overflow', 'scroll').css('width', '');
         }
-        // Enable selection on meta data inforamtion
-        $('div.content-container > div.overlay').mousemove(function(e){
-          e.stopPropagation();
-        });
+        // when annotation is ready
+        if (typeof options.annotationState !== 'undefined') {
+          var a = document.querySelectorAll('[id^="draw_canvas_"]')[0];
+          if (typeof a !== 'undefined' && a.id !== 'undefined') {
+            if (options.annotationState === 'pointer') {
+              // add event listener to osd annotation canvas
+              document.getElementById(a.id).removeEventListener('click', ocr);
+              document.getElementById(a.id).addEventListener('click', ocr);
+            } else {
+              // remove event listener if no annotation on screen
+              document.getElementById(a.id).removeEventListener('click', ocr);
+            }
+          }
+        }
+        // when switch viewType
+        if (typeof options.viewType !== 'undefined') {
+          if (options.viewType === 'ImageView') {
+            $('div.sidePanel').html('<h2 style=\"color: #a40404;\">Selection Text</h2><p><a style=\"color: #006699;\" href=\"http://www.lib.umd.edu/\" target=\"_blank\">Feedback</a></p><p style=\"color: #555555;\">Click on annotations to display selection text.</p>');
+          } else {
+            $('div.sidePanel').html('<h2 style=\"color: #a40404;\">Selection Text</h2><p><a style=\"color: #006699;\" href=\"http://www.lib.umd.edu/\" target=\"_blank\">Feedback</a></p><p style=\"color: #555555;\">Switch to the Image View and click on annotations to display selection text.</p>');
+            if (sidePanelVisible) {
+              m.eventEmitter.publish('sidePanelVisibilityByTab', false);
+            }
+          }
+          // enable selection on side panel and meta data information panel
+          $('div.sidePanel').mousemove(function(e){
+            e.stopPropagation();
+          });
+          $('div.content-container > div.overlay').mousemove(function(e){
+            e.stopPropagation();
+          });
+        }
       });
     }
   });
@@ -125,16 +154,10 @@ $(function() {
 
 // event listener for OCR text side-by-side feature
 function ocr() {
-  if (umdMiradorOCRHovered && umdMiradorOCRText) {
-    m.eventEmitter.publish('sidePanelVisibilityByTab', true);
-    m.eventEmitter.publish('sidePanelToggled');
-    m.eventEmitter.publish('sidePanelVisibilityByTab', true);
-    $('div.sidePanel').html('<h2>Selection Text</h2><p>' + umdMiradorOCRText.replace(/(?:\r\n|\r|\n)/g, ' ') + '</p>');
-    $('div.sidePanel').css('overflow', 'scroll');
-    $('div.sidePanel').css('width', '');
-    $('div.sidePanel').mousemove(function(e){
-      e.stopPropagation();
-    });
-    m.eventEmitter.publish('sidePanelToggled');
+  if (umdMiradorOCRHovered > 0 && umdMiradorOCRText) {
+    if (!sidePanelVisible) {
+      m.eventEmitter.publish('sidePanelVisibilityByTab', true);
+    }
+    $('div.sidePanel').html('<h2 style=\"color: #a40404;\">Selection Text</h2><p><a style=\"color: #006699;\" href=\"http://www.lib.umd.edu/\" target=\"_blank\">Feedback</a></p><p style=\"color: #555555;\">' + umdMiradorOCRText.replace(/(?:-\r\n|-\r|-\n)/g, '').replace(/(?:\r\n|\r|\n)/g, ' ') + '</p>');
   }
 }
