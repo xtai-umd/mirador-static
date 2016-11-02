@@ -129,9 +129,8 @@ function ocr() {
     m.eventEmitter.publish('sidePanelVisibilityByTab', true);
     m.eventEmitter.publish('sidePanelToggled');
     m.eventEmitter.publish('sidePanelVisibilityByTab', true);
-    $('div.sidePanel').html('<h2>Selection Text</h2><p>' + umdMiradorOCRText.replace(/(?:\r\n|\r|\n)/g, ' ') + '</p>');
-    $('div.sidePanel').css('overflow', 'scroll');
-    $('div.sidePanel').css('width', '');
+    $('div.sidePanel').html('<h2 style=\"color: #a40404;\">Selection Text</h2><p><a style=\"color: #006699;\" href=\"http://www.lib.umd.edu/\" target=\"_blank\">Feedback</a></p><p style=\"color: #555555;\">' + umdMiradorOCRText.replace(/(?:-\r\n|-\r|-\n)/g, '').replace(/(?:\r\n|\r|\n)/g, ' ') + '</p>');
+    $('div.sidePanel').css('overflow', 'scroll').css('width', '');
     $('div.sidePanel').mousemove(function(e){
       e.stopPropagation();
     });
