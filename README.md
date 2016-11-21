@@ -1,7 +1,6 @@
 # mirador-static
 
-Current Mirador version: `v2.1.0` IIIF/mirador: [v2.1.0](https://github.com/ProjectMirador/mirador/releases/tag/v2.1.0)
-with modification at [v2.1.0-10-f8f72b0](https://github.com/xtai-umd/mirador/commit/f8f72b0) in xtai-umd/mirador.
+Current Mirador version: [v2.1.2-umd-beta.3](https://github.com/xtai-umd/mirador/releases/tag/v2.1.2-umd-beta.3).
 
 ## Running this version
 
