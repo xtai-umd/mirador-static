@@ -1,6 +1,6 @@
 # mirador-static
 
-Current Mirador version: [v2.1.2-umd-beta.3](https://github.com/xtai-umd/mirador/releases/tag/v2.1.2-umd-beta.3).
+Current Mirador version: [v2.1.2-umd-1.0](https://github.com/xtai-umd/mirador/releases/tag/v2.1.2-umd-1.0).
 
 ## Running this version
 
@@ -10,16 +10,14 @@ A simple local web server: [https://www.browsersync.io/](https://www.browsersync
 
 If using browsersync, run `browser-sync start --server` and visit: [http://localhost:3000/mirador.html](http://localhost:3000/mirador.html).
 
-## Testing annotations
+## Testing dynamic manifest:
 
-Four annotation files are included:
+- [`http://localhost:3000/mirador.html`?**iiifURLPrefix**=*`http://iiif-sandbox.lib.umd.edu/manifests/`*&**manifest**=*`sn83045081/1902-01-15/issue.json`*](http://localhost:3000/mirador.html?iiifURLPrefix=http%3A%2F%2Fiiif-sandbox.lib.umd.edu%2Fmanifests%2F&manifest=sn83045081%2F1902-01-15%2Fissue.json) 
+   * `@define {string} iiifURLPrefix` = 'http://iiif-sandbox.lib.umd.edu/manifests/'
+   * `@define {string} manifestPcdmID` = 'sn83045081/1902-01-15/issue.json'
+   * `@define {string} manifestURI` = 'http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/issue.json'
 
-- [`annotations/annotation-p1-static.json`](https://github.com/xtai-umd/mirador-static/blob/gh-pages/annotations/annotation-p1-static.json)
-- [`annotations/annotation-p1-dynamic.json`](https://github.com/xtai-umd/mirador-static/blob/gh-pages/annotations/annotation-p1-dynamic.json).
-- [`annotations/annotation-p2-static.json`](https://github.com/xtai-umd/mirador-static/blob/gh-pages/annotations/annotation-p2-static.json)
-- [`annotations/annotation-p2-dynamic.json`](https://github.com/xtai-umd/mirador-static/blob/gh-pages/annotations/annotation-p2-dynamic.json).
-
-These files are referenced in the local manifest file [`manifest.json`](manifest.json) for page 1 and 2.
+## Configure annotation styles
 
 `annotationTypeStyles` now supports customizable annotation styles, hovering styles, and ability to show or hide annotation tooltips.  
 
