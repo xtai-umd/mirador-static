@@ -17,6 +17,11 @@ If using browsersync, run `browser-sync start --server` and visit: [http://local
    * `@define {string} manifestPcdmID` = 'sn83045081/1902-01-15/issue.json'
    * `@define {string} manifestURI` = 'http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/issue.json'
 
+- [`http://localhost:3000/mirador.html`?**iiifURLPrefix**=*`http://taixiaoyu.com/mirador-static/`*&**manifest**=*`manifest.json`*](http://localhost:3000/mirador.html?iiifURLPrefix=http%3A%2F%2Ftaixiaoyu.com%2Fmirador-static%2F&manifest=manifest.json)
+   * `@define {string} iiifURLPrefix` = 'http://taixiaoyu.com/mirador-static/'
+   * `@define {string} manifestPcdmID` = 'manifest.json'
+   * `@define {string} manifestURI` = 'http://taixiaoyu.com/mirador-static/manifest.json'
+
 ## Configure annotation styles
 
 `annotationTypeStyles` now supports customizable annotation styles, hovering styles, and ability to show or hide annotation tooltips.  
