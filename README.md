@@ -78,3 +78,8 @@ An example oa:annotation:
   "motivation" : "oa:highlighting"
 }
 ```
+
+## License
+
+See the [LICENSE](LICENSE.md) file for license rights and limitations (Apache 2.0).
+
