@@ -66,55 +66,55 @@
           ],
           "otherContent": [
             {
-              "@id":"/demo/annotation/annotation-articles/page1/annotation-article-1.json",
+              "@id":"./demo/annotation/annotation-articles/page1/annotation-article-1.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page1/annotation-article-2.json",
+              "@id":"./demo/annotation/annotation-articles/page1/annotation-article-2.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page1/annotation-article-3.json",
+              "@id":"./demo/annotation/annotation-articles/page1/annotation-article-3.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page1/annotation-article-4.json",
+              "@id":"./demo/annotation/annotation-articles/page1/annotation-article-4.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page1/annotation-article-5.json",
+              "@id":"./demo/annotation/annotation-articles/page1/annotation-article-5.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page1/annotation-article-6.json",
+              "@id":"./demo/annotation/annotation-articles/page1/annotation-article-6.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page1/annotation-article-7.json",
+              "@id":"./demo/annotation/annotation-articles/page1/annotation-article-7.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page1/annotation-article-8.json",
+              "@id":"./demo/annotation/annotation-articles/page1/annotation-article-8.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page1/annotation-article-9.json",
+              "@id":"./demo/annotation/annotation-articles/page1/annotation-article-9.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page1/annotation-article-10.json",
+              "@id":"./demo/annotation/annotation-articles/page1/annotation-article-10.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page1/annotation-article-11.json",
+              "@id":"./demo/annotation/annotation-articles/page1/annotation-article-11.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page1/annotation-article-12.json",
+              "@id":"./demo/annotation/annotation-articles/page1/annotation-article-12.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page1/annotation-article-13.json",
+              "@id":"./demo/annotation/annotation-articles/page1/annotation-article-13.json",
               "@type":"sc:AnnotationList"
             }
           ],
@@ -147,63 +147,63 @@
           ],
           "otherContent": [
             {
-              "@id":"/demo/annotation/annotation-articles/page2/annotation-article-14.json",
+              "@id":"./demo/annotation/annotation-articles/page2/annotation-article-14.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page2/annotation-article-15.json",
+              "@id":"./demo/annotation/annotation-articles/page2/annotation-article-15.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page2/annotation-article-16.json",
+              "@id":"./demo/annotation/annotation-articles/page2/annotation-article-16.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page2/annotation-article-17.json",
+              "@id":"./demo/annotation/annotation-articles/page2/annotation-article-17.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page2/annotation-article-18.json",
+              "@id":"./demo/annotation/annotation-articles/page2/annotation-article-18.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page2/annotation-article-19.json",
+              "@id":"./demo/annotation/annotation-articles/page2/annotation-article-19.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page2/annotation-article-20.json",
+              "@id":"./demo/annotation/annotation-articles/page2/annotation-article-20.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page2/annotation-article-21.json",
+              "@id":"./demo/annotation/annotation-articles/page2/annotation-article-21.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page2/annotation-article-22.json",
+              "@id":"./demo/annotation/annotation-articles/page2/annotation-article-22.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page2/annotation-article-23.json",
+              "@id":"./demo/annotation/annotation-articles/page2/annotation-article-23.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page2/annotation-article-24.json",
+              "@id":"./demo/annotation/annotation-articles/page2/annotation-article-24.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page2/annotation-article-25.json",
+              "@id":"./demo/annotation/annotation-articles/page2/annotation-article-25.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page2/annotation-article-26.json",
+              "@id":"./demo/annotation/annotation-articles/page2/annotation-article-26.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page2/annotation-article-27.json",
+              "@id":"./demo/annotation/annotation-articles/page2/annotation-article-27.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page2/annotation-article-28.json",
+              "@id":"./demo/annotation/annotation-articles/page2/annotation-article-28.json",
               "@type":"sc:AnnotationList"
             }
           ],
@@ -236,63 +236,63 @@
           ],
           "otherContent": [
             {
-              "@id":"/demo/annotation/annotation-articles/page3/annotation-article-29.json",
+              "@id":"./demo/annotation/annotation-articles/page3/annotation-article-29.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page3/annotation-article-30.json",
+              "@id":"./demo/annotation/annotation-articles/page3/annotation-article-30.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page3/annotation-article-31.json",
+              "@id":"./demo/annotation/annotation-articles/page3/annotation-article-31.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page3/annotation-article-32.json",
+              "@id":"./demo/annotation/annotation-articles/page3/annotation-article-32.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page3/annotation-article-33.json",
+              "@id":"./demo/annotation/annotation-articles/page3/annotation-article-33.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page3/annotation-article-34.json",
+              "@id":"./demo/annotation/annotation-articles/page3/annotation-article-34.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page3/annotation-article-35.json",
+              "@id":"./demo/annotation/annotation-articles/page3/annotation-article-35.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page3/annotation-article-36.json",
+              "@id":"./demo/annotation/annotation-articles/page3/annotation-article-36.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page3/annotation-article-37.json",
+              "@id":"./demo/annotation/annotation-articles/page3/annotation-article-37.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page3/annotation-article-38.json",
+              "@id":"./demo/annotation/annotation-articles/page3/annotation-article-38.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page3/annotation-article-39.json",
+              "@id":"./demo/annotation/annotation-articles/page3/annotation-article-39.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page3/annotation-article-40.json",
+              "@id":"./demo/annotation/annotation-articles/page3/annotation-article-40.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page3/annotation-article-41.json",
+              "@id":"./demo/annotation/annotation-articles/page3/annotation-article-41.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page3/annotation-article-42.json",
+              "@id":"./demo/annotation/annotation-articles/page3/annotation-article-42.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page3/annotation-article-43.json",
+              "@id":"./demo/annotation/annotation-articles/page3/annotation-article-43.json",
               "@type":"sc:AnnotationList"
             }
           ],
@@ -325,23 +325,23 @@
           ],
           "otherContent": [
             {
-              "@id":"/demo/annotation/annotation-articles/page4/annotation-article-44.json",
+              "@id":"./demo/annotation/annotation-articles/page4/annotation-article-44.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page4/annotation-article-45.json",
+              "@id":"./demo/annotation/annotation-articles/page4/annotation-article-45.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page4/annotation-article-46.json",
+              "@id":"./demo/annotation/annotation-articles/page4/annotation-article-46.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page4/annotation-article-47.json",
+              "@id":"./demo/annotation/annotation-articles/page4/annotation-article-47.json",
               "@type":"sc:AnnotationList"
             },
             {
-              "@id":"/demo/annotation/annotation-articles/page4/annotation-article-48.json",
+              "@id":"./demo/annotation/annotation-articles/page4/annotation-article-48.json",
               "@type":"sc:AnnotationList"
             }
           ],
