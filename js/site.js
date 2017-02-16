@@ -31,11 +31,15 @@ $(function() {
       var parameterArr = queryArray[i].split('='); //split key and value
       if (parameterArr[0] == parameterName) { return parameterArr[1]; }
     }
+    return '';
   }
-  var manifestPcdmID = getParamValue('manifest');
+  var manifestPcdmID = decodeURIComponent(getParamValue('manifest'));
   var iiifURLPrefix = decodeURIComponent(getParamValue('iiifURLPrefix'));
   var manifestURI = iiifURLPrefix + manifestPcdmID;
-  // var manifestURI = 'http://iiif-sandbox.lib.umd.edu/manifests/sn83045081/1902-01-15/issue.json';
+  // demo
+  if (manifestURI == ''){
+    manifestURI = '../demo/manifest.json';
+  }
 
   /**
    * OCR side-by-side required local varibles

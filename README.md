@@ -12,6 +12,11 @@ If using browsersync, run `browser-sync start --server` and visit: [http://local
 
 ## Testing dynamic manifest:
 
+- [`http://localhost:3000/mirador.html`](http://localhost:3000/mirador.html) 
+   * `@define {string} iiifURLPrefix` = ''
+   * `@define {string} manifestPcdmID` = ''
+   * `@define {string} manifestURI` = '/demo/manifest.json'
+
 - [`http://localhost:3000/mirador.html`?**iiifURLPrefix**=*`http://iiif-sandbox.lib.umd.edu/manifests/`*&**manifest**=*`sn83045081/1902-01-15/issue.json`*](http://localhost:3000/mirador.html?iiifURLPrefix=http%3A%2F%2Fiiif-sandbox.lib.umd.edu%2Fmanifests%2F&manifest=sn83045081%2F1902-01-15%2Fissue.json) 
    * `@define {string} iiifURLPrefix` = 'http://iiif-sandbox.lib.umd.edu/manifests/'
    * `@define {string} manifestPcdmID` = 'sn83045081/1902-01-15/issue.json'
