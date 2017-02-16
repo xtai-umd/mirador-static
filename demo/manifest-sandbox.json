@@ -59,12 +59,12 @@
               "@type":"oa:Annotation",
               "motivation":"sc:painting",
               "resource":{
-                "@id":"https://iiifdev.lib.umd.edu/images/fcrepo:pcdm%2F56%2F05%2F3d%2F60%2F56053d60-8b5e-4541-ab25-4098c25a2aea",
+                "@id":"http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_diamondbackfy16_Sample/sn90057049/7637/1926011201/0002.tif",
                 "@type":"dctypes:Image",
                 "format":"image/jpeg",
                 "service":{
                   "@context":"http://iiif.io/api/image/2/context.json",
-                  "@id":"https://iiifdev.lib.umd.edu/images/fcrepo:pcdm%2F56%2F05%2F3d%2F60%2F56053d60-8b5e-4541-ab25-4098c25a2aea",
+                  "@id":"http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_diamondbackfy16_Sample/sn90057049/7637/1926011201/0002.tif",
                   "profile":"http://iiif.io/api/image/2/profiles/level2.json"
                 },
                 "height":6353,
@@ -144,12 +144,12 @@
               "@type":"oa:Annotation",
               "motivation":"sc:painting",
               "resource":{
-                "@id":"https://iiifdev.lib.umd.edu/images/fcrepo:pcdm%2F43%2F4a%2Fbf%2F76%2F434abf76-eec4-4972-9629-b882d7cbb2c4",
+                "@id":"http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_diamondbackfy16_Sample/sn90057049/7637/1926011201/0003.tif",
                 "@type":"dctypes:Image",
                 "format":"image/jpeg",
                 "service":{
                   "@context":"http://iiif.io/api/image/2/context.json",
-                  "@id":"https://iiifdev.lib.umd.edu/images/fcrepo:pcdm%2F43%2F4a%2Fbf%2F76%2F434abf76-eec4-4972-9629-b882d7cbb2c4",
+                  "@id":"http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_diamondbackfy16_Sample/sn90057049/7637/1926011201/0003.tif",
                   "profile":"http://iiif.io/api/image/2/profiles/level2.json"
                 },
                 "height":6353,
@@ -233,12 +233,12 @@
               "@type":"oa:Annotation",
               "motivation":"sc:painting",
               "resource":{
-                "@id":"https://iiifdev.lib.umd.edu/images/fcrepo:pcdm%2F84%2F19%2F71%2F46%2F84197146-8015-4436-be6c-ac073ac04dec",
+                "@id":"http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_diamondbackfy16_Sample/sn90057049/7637/1926011201/0004.tif",
                 "@type":"dctypes:Image",
                 "format":"image/jpeg",
                 "service":{
                   "@context":"http://iiif.io/api/image/2/context.json",
-                  "@id":"https://iiifdev.lib.umd.edu/images/fcrepo:pcdm%2F84%2F19%2F71%2F46%2F84197146-8015-4436-be6c-ac073ac04dec",
+                  "@id":"http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_diamondbackfy16_Sample/sn90057049/7637/1926011201/0004.tif",
                   "profile":"http://iiif.io/api/image/2/profiles/level2.json"
                 },
                 "height":6353,
@@ -322,12 +322,12 @@
               "@type":"oa:Annotation",
               "motivation":"sc:painting",
               "resource":{
-                "@id":"https://iiifdev.lib.umd.edu/images/fcrepo:pcdm%2Fb9%2F34%2Fa0%2F40%2Fb934a040-e712-48b1-8965-04a7f5ed35f5",
+                "@id":"http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_diamondbackfy16_Sample/sn90057049/7637/1926011201/0005.tif",
                 "@type":"dctypes:Image",
                 "format":"image/jpeg",
                 "service":{
                   "@context":"http://iiif.io/api/image/2/context.json",
-                  "@id":"https://iiifdev.lib.umd.edu/images/fcrepo:pcdm%2Fb9%2F34%2Fa0%2F40%2Fb934a040-e712-48b1-8965-04a7f5ed35f5",
+                  "@id":"http://iiif-sandbox.lib.umd.edu/loris/batch_mdu_diamondbackfy16_Sample/sn90057049/7637/1926011201/0005.tif",
                   "profile":"http://iiif.io/api/image/2/profiles/level2.json"
                 },
                 "height":6353,

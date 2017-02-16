@@ -1,0 +1,122 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "annotations/hits",
+  "@type": "sc:AnnotationList",
+  "resources": [
+    {
+      "@id": "P1_TL00160",
+      "@type": [
+        "oa:Annotation",
+        "umd:Hits"
+      ],
+      "resource": [
+        {
+          "@type": "cnt:ContentAsText",
+          "format": "text/plain",
+          "chars": "College Park"
+        }
+      ],
+      "on": {
+        "@type": "oa:SpecificResource",
+        "selector": {
+          "@type": "oa:FragmentSelector",
+          "value": "xywh=1536,5408,260,33"
+        },
+        "full": "0002.xml"
+      },
+      "motivation": "sc:painting"
+    },
+    {
+      "@id": "P1_TL00168",
+      "@type": [
+        "oa:Annotation",
+        "umd:Hits"
+      ],
+      "resource": [
+        {
+          "@type": "cnt:ContentAsText",
+          "format": "text/plain",
+          "chars": "College Park"
+        }
+      ],
+      "on": {
+        "@type": "oa:SpecificResource",
+        "selector": {
+          "@type": "oa:FragmentSelector",
+          "value": "xywh=1290,5794,280,35"
+        },
+        "full": "0002.xml"
+      },
+      "motivation": "sc:painting"
+    },
+    {
+      "@id": "P1_TL00004",
+      "@type": [
+        "oa:Annotation",
+        "umd:Hits"
+      ],
+      "resource": [
+        {
+          "@type": "cnt:ContentAsText",
+          "format": "text/plain",
+          "chars": "College Park"
+        }
+      ],
+      "on": {
+        "@type": "oa:SpecificResource",
+        "selector": {
+          "@type": "oa:FragmentSelector",
+          "value": "xywh=1877,764,310,60"
+        },
+        "full": "0002.xml"
+      },
+      "motivation": "sc:painting"
+    },
+    {
+      "@id": "P1_TL00195",
+      "@type": [
+        "oa:Annotation",
+        "umd:Hits"
+      ],
+      "resource": [
+        {
+          "@type": "cnt:ContentAsText",
+          "format": "text/plain",
+          "chars": "College Park"
+        }
+      ],
+      "on": {
+        "@type": "oa:SpecificResource",
+        "selector": {
+          "@type": "oa:FragmentSelector",
+          "value": "xywh=2020,2094,260,40"
+        },
+        "full": "0002.xml"
+      },
+      "motivation": "sc:painting"
+    },
+    {
+      "@id": "P1_TL00256",
+      "@type": [
+        "oa:Annotation",
+        "umd:Hits"
+      ],
+      "resource": [
+        {
+          "@type": "cnt:ContentAsText",
+          "format": "text/plain",
+          "chars": "College Park"
+        }
+      ],
+      "on": {
+        "@type": "oa:SpecificResource",
+        "selector": {
+          "@type": "oa:FragmentSelector",
+          "value": "xywh=2264,5065,280,35"
+        },
+        "full": "0002.xml"
+      },
+      "motivation": "sc:painting"
+    }
+  ]
+}
