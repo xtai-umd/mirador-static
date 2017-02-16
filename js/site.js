@@ -38,7 +38,7 @@ $(function() {
   var manifestURI = iiifURLPrefix + manifestPcdmID;
   // demo
   if (manifestURI == ''){
-    manifestURI = '../demo/manifest.json';
+    manifestURI = './demo/manifest.json';
   }
 
   /**
